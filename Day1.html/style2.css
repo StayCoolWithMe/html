@@ -1,0 +1,59 @@
+.img1{
+    width: 300px;
+    display:inline-block;  
+  }
+  .all{
+      display:inline-block;
+      vertical-align: top;
+      width: 200px;
+      margin-left:5px;
+  }
+  .compete{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display:block;
+      font-weight: bolder;
+  }
+  .super{
+      margin-top:5px;
+      margin-bottom: 0px;
+      display: inline-block;
+      opacity: 0.6;
+      font-size: 14px;
+  }
+  .view{
+      margin-top:10px;
+      color:gray;
+      font-size: 16px;
+  }
+  .p{
+      font-family: 'Courier New', Courier, monospace;
+  }
+  .nba{
+    margin-bottom: 0px;
+    width: 300px;
+  }
+  .Oliva{
+    margin-top:0px;
+  }
+  .mutal{
+    margin-top:0px;
+  }
+  .add3{
+    display:block;
+    margin-top:0px;
+  }
+  .icon{
+    display: inline-block;
+    padding:0px;
+    width: 100px;
+  }
+  .letter{
+    display: inline-block;
+  }
+  .ICON{
+    display: inline-block;
+  }
+
+
+

@@ -1,0 +1,54 @@
+.icon{
+    width: 400px;
+}
+.icon-picture{
+    width: 100%;
+}
+.preview{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 400px;
+    column-gap: 5px;
+}
+.img{
+    width: 100px;
+    border-radius: 1000px;
+    height: 100px;
+}
+.profile-name{
+    margin-bottom: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 0px;
+}
+.friends{
+    margin-top:2px;
+    color:gray;
+
+}
+.add{
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 110, 255);
+    color:white;
+    border-radius: 5px;
+    border:none;
+}
+.all{
+    display: inline-block;
+    margin-right: 5px;
+    row-gap: 0px;
+}
+.preview{
+    box-shadow: 0px 0px 9px;
+    
+    
+
+
+
+}
+
+
+
+
