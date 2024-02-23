@@ -1,0 +1,51 @@
+.section-div {
+    background: linear-gradient(rgba(0,0,0,0), rgb(93, 131, 134)), url(https://cambodianess.com/uploads/images/1598918771lmpnt-d6k64zpx4aeif7c.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.body
+{
+    margin:0px;
+    padding:0px;
+    margin-bottom: 1000px;
+}
+.logo{
+   width: 160px;
+   position: absolute;
+   top:10px;
+}
+.letter{
+    text-align: center;
+    color:white;
+    padding-top:180px;
+}
+.letter h1{
+    font-weight: 20%;
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-family: 'sans-serif';
+}
+.letter p{
+    font-size: 15px;
+}
+.button{
+    margin:50px 10px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+
+}
+.button a{
+    width: 80px;
+    text-decoration: none;
+    display: inline-block;
+    margin:10px;
+    padding:8px;
+    color:white;
+    border:0.5px solid white;
+    align:center middle;
+
+    
+}

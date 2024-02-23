@@ -1,0 +1,155 @@
+.image1{
+  position: absolute;
+  left: 1000px;
+  top: 110px;
+  z-index: 1;
+  width: 250px;
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background: linear-gradient(rgba(0,0,0,0), rgb(0, 0, 0));
+  display: flex;
+}
+
+.US{
+  color: #fff;
+  text-align: center;
+  font-family: Clashdisplay, sans-serif;
+  font-size: 41px;
+  line-height: 45px;
+  font-weight: 900;
+  display: inline-block; 
+  margin-bottom: -40px;
+  z-index: 2;
+}
+
+.sammy{
+  color: white;
+  width: 500px;
+  margin: 16px auto 0;
+  text-align: center;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.letter{ 
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  margin-bottom: 1000px;
+  margin:0px;
+}
+
+.download, .request{
+  border: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:0.15s;
+}
+.download:hover {
+  padding:19px 29px;
+  font-size: 14px;
+}
+.request:hover{
+  padding:19px 29px;
+  font-size: 14px;
+}
+
+.download{
+  background-color: #fbe274;
+  color: black;
+}
+
+.request{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.image2{
+  position: fixed;
+  bottom: 78px;
+  width: 230px;
+  left: 110px;
+  position:absolute;
+}
+.section-div{
+  display: flex;
+  flex-direction: column;
+}
+.uper{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.left{
+  flex:1;
+  margin-right: px;
+  align-items: center;
+
+  display: flex;
+}
+.right{
+  flex:1;
+  margin-right: px;
+  align-items: center;
+
+  display: flex;
+}
+.image6{
+  height: 60%;
+  margin-right: 25px;
+}
+.faq{
+  color:white;
+  margin-right:35px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.tax{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.com{
+  color:white;
+  margin-left:36px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.download1{
+  color:white;
+ position: absolute;
+ align-items: center;
+ margin-top: 15px;
+ right:20px;
+ padding: 12px;
+  background-color:rgb(43, 43, 43);
+  border-radius: 45px;
+  border:1px solid;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+
+ 
