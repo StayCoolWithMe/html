@@ -1,0 +1,130 @@
+.body{
+    margin:0px;
+    background-color: black;
+}
+.welcome{
+    color:red;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.level  {
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.become{
+    color:gray;
+    text-align: center;
+    align-items: center;
+    
+}
+.start{
+    color:black;
+    background-color: white;
+   padding-top: 16px;
+   padding-bottom: 16px;
+    padding-left:26px;
+    padding-right: 26px;
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.middle-div{
+
+    flex:1;
+    margin-right: 90px;
+}
+.left-div{
+   
+    width: 350px;
+    margin-right:75px
+    
+}
+.right-div{
+  
+    width: 250px;
+}
+.x{
+    color:black;
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: white;
+    margin-right: 10px;
+    border:none;
+    border-radius: 15px ;
+    padding:13px;
+    transition:0.15s;
+}
+.x:hover{
+    opacity: 0.6;
+}
+.y{
+    background-color: black;
+    color:white;
+    font-weight: bolder;
+    border:none;
+    padding: 10px;
+    font-size: 20px;
+    transition:0.15s;
+}
+.y:hover{
+    opacity: 0.6;
+}
+.member{
+    color:white;
+    margin-right: 40px;
+    font-weight: bolder;
+    font-size: 21px;
+    transition: 0.15s;
+}
+.member:hover{
+    opacity: 0.6;
+}
+.plan{
+    color:white;
+    margin-right: 40px;
+    font-weight: bolder;
+    font-size: 21px;
+    transition: 0.15s;
+}
+.plan:hover{
+    opacity: 0.6;
+}
+.job{
+    color:white;
+    margin-right: 40px;
+    font-weight: bolder;
+    font-size: 21px;
+    transition:0.15s;
+}
+.job:hover{
+    opacity: 0.6;
+}
+.blog{
+    color:white;
+    margin-right: 40px;
+    font-weight: bolder;
+    font-size: 21px;
+    transition: 0.15s;
+}
+.blog:hover{
+    opacity: 0.6;
+}
+.sign{
+    color: white;
+    background-color: black;
+    border-color: white;
+   padding: 15px;
+    border: 0.5px solid ;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 15px;
+    transition:0.15s;
+}
+.sign:hover{
+    border: 0.5px solid rgba(150, 149, 149, 0.7 );
+}
