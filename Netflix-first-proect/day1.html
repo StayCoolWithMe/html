@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day1.css">   
+</head>
+<body class="body">
+
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="Netflix_Logo_PMS (1).png"></div>
+            <div class="right">
+                <button>Sign in</button>
+            </div>
+        </div>
+        <div class="middle">
+            <h1>Unlimited movie, TV shows, and more</h1>
+            <h4>Watch anywhere, Cancel anytime.</h4>
+            <p>ready to watch?Enter your email to create or restart your membership.</p>
+            <div class="bt">
+                <input placeholder="Email address">
+                <button>Get start ></button>
+            </div>
+        </div>
+    </div>
+    <hr class="break1">
+    <div>
+        <div class="letter-1">
+            <div class="item-1">
+                <h1>Enjoy on your TV </h1>
+            <p>Watch on Smart TVs, Playstation, Xbox,<br>Chromecast, Apple TV, Blu-ray players, and<br> more.</p>
+            </div>
+            <div class="img-1"><img src="tv.png" ></div>
+        </div>
+    </div>
+    <hr class="break2">
+    <div class="letter-2">
+        <div class="img-2"><img src="mobile.jpg"></div>
+        <div class="item-2">
+            <h1>Download your<br> shows to watch<br> offline</h1>
+            <p>Save your favorites easily and always have<br> something to watch.</p>
+        </div>
+    </div>
+    <hr class="break3">
+    <div class="letter-3">
+        <div class="item-3">
+            <h1>Watch<br> everywhere</h1>
+            <p>Stream unlimited movies and TV<br> shows on your phone, tablet, laptop,<br> and TV.</p>
+        </div>
+    </div>
+    <hr class="break4">
+    <div class="letter-4">
+        <div class="img-4"><img src="kid.png"></div>
+        <div class="item-4">
+            <h1>Create profiles for<br> kids</h1>
+            <p>Send kids on adventures with their favorite<br> characters in a space made just for them—<br>free with your membership.</p>
+        </div>
+    </div> 
+    <hr class="break5">
+    <div class="last">
+        <h1>Frequently Asked Questions</h1>
+        <ul class="accordin">
+            <li>
+                <input type="radio" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+
+You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="second">
+                <label for="second">How much does Netflix cost?</label>
+                <div class="content">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD 9.99 to USD 2.99 a month. No extra costs, no contracts.
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="third">
+                <label for="third">Where can I watch?</label>
+                <div class="content">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="four">
+                <label for="four">How do I cancel?</label>
+                <div class="content">
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="five">
+                <label for="five">What can I watch on Netflix</label>
+                <div class="content">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="six">
+                <label for="six">Is Netflix good for kids</label>
+                <div class="content">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                </div>
+            </li>
+
+        </ul>
+        <small class="small">
+            <p>Ready to watch?Enter your email  to create or restart your membership.</p>
+            <div class="bt">
+                <input placeholder="Email address">
+                <button>Get start ></button>
+            </div>
+        </small>
+    </div>
+    <hr class="break5">
+    <div class="footer">
+        <h2>Question?Contact us</h2>
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed test</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="#">Ways to watch </a>
+                <a href="#">Corperate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="col">
+                <a href="#">Media Center</a>
+                <a href="#">Term of use </a>
+                <a href="#">Contact us</a>
+        
+            </div>
+        </div>
+        <select name="languague" class="languague">
+            <option value="English">
+              <p>English</p>
+            </option>
+            
+          </select>
+    </div>
+    <!--Jaavascript-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var accItems = document.querySelectorAll('.accordin li');
+
+            accItems.forEach(function(item) {
+                var label = item.querySelector('label');
+                var content = item.querySelector('.content');
+                var input = item.querySelector('input[type="radio"]');
+                label.addEventListener('click', function() {
+                    content.classList.toggle('active');
+                    input.checked = !input.checked;
+                    accItems.forEach(function(otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.querySelector('.content').classList.remove('active');
+                            otherItem.querySelector('input[type="radio"]').checked = false;
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+  
+</body>
+</html>

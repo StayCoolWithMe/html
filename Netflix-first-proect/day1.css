@@ -1,0 +1,369 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    font-family: 'poppins',sans-serif;
+    padding-bottom: 10000px ;
+}
+
+.container {
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('verson.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+.header{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.left{
+    margin-right:15px;
+    height: 100%;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    
+}
+.left img{
+    width: 35%;
+    margin-left:65px;
+
+}
+.right{
+    margin-left:125px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right:95px;
+}
+.right button{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: red;
+    border:none;
+   color:white;
+   border-radius: 8px;
+   
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+.middle h1{
+    font-weight: 900px;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.middle h4{
+    font-size:23px;
+    margin-bottom: 0px;
+    margin-top: 18px;
+    font-weight: 0px;
+}
+.middle p{
+    font-size: 20px;
+}
+.bt{
+    align-items: top;
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+
+
+    
+}
+.bt input{
+
+    text-align: left;
+    padding-right: 195px;
+    justify-content: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    display: flex;
+    border-radius: 5px;
+    background-color: inherit;
+    border:0.1px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+.bt input::placeholder{
+    
+    font-weight: ld;
+    font-size: 16px;
+    color:white;
+}
+.bt button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:30px;
+    padding-right: 30px;
+   font-weight: bold;
+   color:white;
+    background-color: red;
+    border-radius: 4px;
+    border:none;
+    font-size: 17px;
+}
+.break1{
+    border: none; 
+    border-top: 8px solid rgb(48, 48, 48);
+    margin-top:0px;
+}
+.letter-1{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 10%;
+    height: 40vh;
+}
+.item-1{
+ display: flex;
+ flex-direction: column;
+ width:100%;
+ flex:4;
+}
+.img-1{
+    display: flex;
+    flex:2;
+
+}
+.img-1 img{
+  width: 480px;
+    object-fit: cover;
+
+}
+.item-1 h1{
+    font-weight:900;
+    font-size: 48px;
+}
+.item-1 p{
+    font-weight: 400;
+    font-size: 28px;
+    margin:0px;
+}
+.break2{
+    border: none; 
+    border-top: 8px solid rgb(48, 48, 48);
+    margin-top:12px;
+}
+.letter-2{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    padding-left:15%;
+    
+    height: 40vh; 
+    align-items: center;
+    gap:90px;
+}
+.item-2{
+  display: flex;
+  flex-direction: column;
+    flex:6;
+
+}
+.img-2{
+    display: flex;
+    flex:2;
+}
+.item-2 h1{
+    margin: 0px;
+    font-weight: 900;
+    font-size: 48px;
+    flex-grow: 1;
+    
+}
+.item-2 p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 24px;
+}
+.img-2 img{
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+   vertical-align: top;
+}
+.img-2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.break3{
+    border: none; 
+    border-top: 8px solid rgb(48, 48, 48);
+    margin-top:22px;
+}
+.letter-3{
+    display: flex;
+    padding: 50px 15%;
+}
+.item-3 h1{
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 0px;
+    line-height:1.3;
+
+}
+.item-3 p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.break4{
+    border: none; 
+    border-top: 8px solid rgb(48, 48, 48);
+    margin-top:22px;
+}
+.letter-4{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 8%;
+    gap:45px;
+}
+.item-4 h1{
+    font-weight: 900;
+    font-size: 48px;
+
+}
+.item-4 p{
+    font-weight: 400;
+    font-size: 24px;
+}
+.item-4 {
+    display: flex;
+    flex-direction: column;
+    flex:6;
+}
+.img-4{
+    display: flex;
+    flex:4;
+}
+.img-4 img{
+    width: 110%;
+    height: 110%;
+}
+.break5{
+    border: none; 
+    border-top: 8px solid rgb(48, 48, 48);
+    margin-top:30px;
+}
+.last h1{
+    font-size: 48px;
+    font-weight: 900px;
+    text-align: center;
+    padding-top: 72px;
+}
+.accordin{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordin li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+}
+.accordin li label{
+    display: flex;
+     align-items: center;
+     padding: 19px;
+     font-size: 18px;
+     font-weight: 500;
+     background-color: rgb(44, 44, 44);
+     cursor: pointer;
+     position: relative;
+     margin-bottom: 2px;
+}
+.accordin li label::after {
+    content: '+';
+    font-size: 38px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    font-weight: 1;
+    transition: transform 0.15s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordin .content{
+    background-color: rgb(33, 33, 33);
+    overflow: hidden;
+    text-align: left;
+    padding: 0 20px;
+   max-height: 0;
+   transition: max-height 0.5s,padding 0.5s;
+} 
+.accordin input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.accordin input[type="radio"]:checked + label::after{
+    transform:rotate(40deg);
+}
+.small{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.small p{
+    font-size: 13px;
+    color:white;
+}
+.footer{
+    padding: 50px 15% 10px;
+   color:white;
+}
+.footer .row{
+    display: flex;
+}
+.footer h2{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color:gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.languague{
+    background-color: black;
+    color:white;
+    padding: 8px;
+    border-radius: 2px;
+}
+  
