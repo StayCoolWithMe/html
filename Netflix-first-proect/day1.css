@@ -59,7 +59,12 @@ body {
     border:none;
    color:white;
    border-radius: 8px;
+   cursor: pointer;
    
+}
+.right button:hover{
+    background-color: rgb(192, 1, 1);
+    
 }
 .middle{
     display: flex;
@@ -88,6 +93,7 @@ body {
     display: flex;
     flex-direction: row;
     gap:15px;
+    cursor: pointer;
 
 
     
@@ -100,13 +106,35 @@ body {
     padding-top:15px;
     padding-bottom: 15px;
     padding-left: 10px;
-    display: flex;
     border-radius: 5px;
     background-color: inherit;
     border:0.1px solid white;
     background-color: rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;  
+    color:white;
 }
+.bt input:invalid {
+    animation: justshake 0.3s forwards;
+    color: white;
+  }
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX(5px);
+    }
+  }
 .bt input::placeholder{
     
     font-weight: ld;
@@ -124,7 +152,15 @@ body {
     border-radius: 4px;
     border:none;
     font-size: 17px;
+    cursor: pointer;
+    transition: 0.15s;
 }
+.bt button:hover{
+    background-color: rgb(192, 1, 1);
+    font-size: 19px;
+}
+
+
 .break1{
     border: none; 
     border-top: 8px solid rgb(48, 48, 48);
@@ -366,4 +402,83 @@ input[type="radio"]{
     padding: 8px;
     border-radius: 2px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-size: auto;
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: center;
+        height: auto;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    .middle h1 {
+        font-size: 36px; 
+    }
+
+    .middle h4 {
+        font-size: 18px; 
+    }
+
+    .middle p {
+        font-size: 16px; 
+    }
+
+    .letter-1,
+    .letter-2,
+    .letter-3,
+    .letter-4 {
+        flex-direction: column; 
+        padding: 50px 5%; 
+    }
+
+    .item-1 h1,
+    .item-2 h1,
+    .item-3 h1,
+    .item-4 h1 {
+        font-size: 32px; 
+    }
+
+    .item-1 p,
+    .item-2 p,
+    .item-3 p,
+    .item-4 p {
+        font-size: 16px; 
+    }
+
+    .accordin .content {
+        padding: 10px 20px;
+    }
+
+    .accordin li label {
+        padding: 15px; 
+    }
+
+    .footer {
+        padding: 30px 5% 10px;
+    }
+
+    .footer .col {
+        flex-basis: 50%; 
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+
+    .footer .col a {
+        font-size: 12px; 
+    }
+
+    .languague {
+        padding: 6px; 
+    }
+}
+
   
