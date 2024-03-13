@@ -1,0 +1,13 @@
+.container1,.container2
+{
+    width: 100vw;
+    height: 100vh;
+}
+.container1
+{
+    background-color: rgb(191, 191, 255);
+}
+.container2
+{
+    background-color: rgb(255, 184, 184);
+}

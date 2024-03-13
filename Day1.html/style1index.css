@@ -1,130 +1,125 @@
-.body{
-    margin:0px;
+
+body {
     background-color: black;
 }
-.welcome{
-    color:red;
-    margin-bottom: 0px;
-    font-size: 25px;
+.header{
+    height: 10vh;
 }
-.level  {
-    color:white;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-weight: bolder;
-    font-size: 45px;
+.container{
+    height: 80vh;
+   
 }
-
-.become{
-    color:gray;
+.footer{
+    height: 10vh;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
-    align-items: center;
-    
 }
-.start{
-    color:black;
-    background-color: white;
-   padding-top: 16px;
-   padding-bottom: 16px;
-    padding-left:26px;
-    padding-right: 26px;
-    border: none;
-    border-radius: 16px;
-    font-weight: bold;
-    font-size: 15px;
-}
-.middle-div{
-
-    flex:1;
-    margin-right: 90px;
-}
-.left-div{
+.left{
    
     width: 350px;
-    margin-right:75px
-    
+    margin-right:45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
 }
-.right-div{
-  
-    width: 250px;
+.left img{
+    margin-left:30px;
+    width: 30%;
+    cursor: pointer;
 }
-.x{
-    color:black;
-    font-weight: bolder;
-    font-size: 16px;
-    background-color: white;
-    margin-right: 10px;
+.middle{
+   
+    width: 450px;
+    margin-right:45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+
+}
+.middle p{
+    color:rgb(185, 185, 185);
+    cursor: pointer;
+    transition: 0.15s;
+    font-size: 17px;
+}
+.middle p:hover{
+    color:white;
+}
+
+.right{
+   
+    width: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.right button{
+    margin-right:30px;
+    padding: 14px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(35, 35, 35);
     border:none;
-    border-radius: 15px ;
-    padding:13px;
-    transition:0.15s;
-}
-.x:hover{
-    opacity: 0.6;
-}
-.y{
-    background-color: black;
-    color:white;
-    font-weight: bolder;
-    border:none;
-    padding: 10px;
-    font-size: 20px;
-    transition:0.15s;
-}
-.y:hover{
-    opacity: 0.6;
-}
-.member{
-    color:white;
-    margin-right: 40px;
-    font-weight: bolder;
-    font-size: 21px;
+    border-radius: 20px;
+    cursor: pointer;
     transition: 0.15s;
 }
-.member:hover{
-    opacity: 0.6;
+.right button:hover{
+    border:0.1px solid gray;
 }
-.plan{
-    color:white;
-    margin-right: 40px;
+.letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    text-align: center;
+}
+.letter h1{
+    font-size: 80px;
+    margin-bottom: 0px;
     font-weight: bolder;
-    font-size: 21px;
+    color:white;
+    font-family:sans-serif;
+}
+.letter h4{
+    color:rgb(147, 147, 147);
+    font-weight: bold;
+    font-size: 22px;
+    font-family:sans-serif;
+}
+
+.letter button{
+    color:white;
+    background-color: rgb(36, 36, 36);
+    padding:15px;
+    padding-left:30px;
+    padding-right: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap:5px;
+    font-weight: bolder;
+
+    border:0.5px solid;
+    border-color: black;
+    border-radius: 30px;
+    cursor: pointer;
     transition: 0.15s;
 }
-.plan:hover{
-    opacity: 0.6;
+.letter button:hover{
+   border:0.3px solid rgb(110, 110, 110);
 }
-.job{
-    color:white;
-    margin-right: 40px;
-    font-weight: bolder;
-    font-size: 21px;
-    transition:0.15s;
-}
-.job:hover{
-    opacity: 0.6;
-}
-.blog{
-    color:white;
-    margin-right: 40px;
-    font-weight: bolder;
-    font-size: 21px;
-    transition: 0.15s;
-}
-.blog:hover{
-    opacity: 0.6;
-}
-.sign{
-    color: white;
-    background-color: black;
-    border-color: white;
-   padding: 15px;
-    border: 0.5px solid ;
-    font-weight: 600;
-    font-size: 15px;
-    border-radius: 15px;
-    transition:0.15s;
-}
-.sign:hover{
-    border: 0.5px solid rgba(150, 149, 149, 0.7 );
-}
+
+
+
+
+

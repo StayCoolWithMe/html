@@ -42,12 +42,39 @@
 }
 .preview{
     box-shadow: 0px 0px 9px;
-    
-    
-
-
+}
+.body {
+    margin:0px;
+    padding: 0px;
+    font-family: monospace;
+}
+.header{
+    height: 15vh;
 
 }
+.left{
+    background-color: red;
+    margin-right:35px;
+    width: 250px;
+}
+.middle{
+    background-color: yellow;
+    margin-right:35px;
+    width: 400px;
+}
+.right{
+    background-color: aqua;
+    width: 250px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: cnter;
+    vertical-align: center;
+    justify-content: space-between;
+}
+
+
 
 
 

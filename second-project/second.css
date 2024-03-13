@@ -1,0 +1,267 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color:black;
+    font-family: sans-serif;
+    margin-bottom: 1000px;
+    color:white;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    margin-right:45px;
+}
+.left img{
+    width: 80%;
+    height: 90%;
+}
+.middle {
+    display: flex;
+    flex-direction: row;
+    flex:3;
+    margin-right:45px;
+    justify-content: space-between;
+    font-weight: bold;
+    color:white;
+
+}
+.right {
+    display: flex;
+    justify-content: center;
+    flex:1;
+
+}
+.right button{
+    color:white;
+    display: block;
+    padding: 1px 15px;
+    background-color: transparent;
+    border:0.5px solid white;
+    height: 30px;
+    border-radius: 20px;
+}
+.container h1 ,h3{
+    color:white;
+    text-align: center;
+    line-height: 1.5;
+}
+.container h1{
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.container h3{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(196, 194, 194);
+   
+}
+.container button{
+    padding: 12px 25px;
+    color: white;
+    background-color: rgb(0, 128, 255);
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+/*dropdown*/
+.dropbox a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    line-height: 1.5;
+}
+.dropbox .content{
+    position: absolute;
+    display: none;
+    box-shadow: 2px 2px 5px rgb(45, 45, 45);
+    border:none;
+    padding: 15px;
+    
+  
+}
+.dropbox:hover .content{
+    display: block;
+}
+/*dropdown end*/
+.container2{
+    padding: 50px 12%;
+}
+.container2 h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.container3{
+    height: 100vh;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.item h1 , h3 , h5{
+    margin-bottom: 0px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.item h3{
+    font-size: 20px;
+    color:rgb(21, 115, 237);
+    font-weight: bold;
+}
+.item h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.item h5{
+    font-size: 18px;
+    color: gray;
+}
+.grid{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    padding: 50px 4%;
+  
+    gap:50px;
+}
+.grid1 , .grid2 , .grid3 , .grid4 , .grid5 , .grid6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.grid1 img{
+    height: 50%;
+   
+    margin-bottom: 0px;
+}
+.grid1 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid1 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid1 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}
+.grid2 img{
+    height: 50%;
+    margin-bottom: 0px;
+}
+.grid2 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid2 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid2 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}
+.grid3 img{
+    height: 50%;
+    margin-bottom: 0px;
+}
+.grid3 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid3 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid3 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}
+.grid4 img{
+    height: 50%;
+    margin-bottom: 0px;
+}
+.grid4 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid4 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid4 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}
+.grid5 img{
+    height: 50%;
+    margin-bottom: 0px;
+}
+.grid5 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid5 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid5 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}
+.grid6 img{
+    height: 50%;
+    margin-bottom: 0px;
+}
+.grid6 h3 , p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+.grid6 h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.grid6 p{
+    font-weight: bold;
+    font-size: 18px;
+    color:gray;
+}

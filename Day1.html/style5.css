@@ -30,6 +30,9 @@
     font-size: 13px;
     opacity: 0.6;
 }
+.body{
+    padding-bottom: 1000px;
+}
 .letter{
     vertical-align: middle;
     align:center;
@@ -83,4 +86,45 @@
     margin:0px;
     display: inline-block;
 }
-
+.exercise1{
+    margin-top:115px;
+}
+.accordin{
+    background-color: red;
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 10%;
+    text-align: left;
+    border:none;
+    transition: 0.15s;
+}
+.active, .accordin:hover{
+    background-color: gray;
+}
+.netflix{
+    padding: 0 18px;
+    background-color: gray;
+    display: none;
+    overflow: hidden;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
