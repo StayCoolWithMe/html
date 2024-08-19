@@ -1,0 +1,104 @@
+body{
+    background-color: tomato;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+    gap:5px
+}
+
+.container1, .container2{
+    background-color: pink;
+}
+nav{
+    background-color: black;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+
+    list-style: none;
+
+    gap:25px;
+    width: 100%; /*This must be set*/
+    margin: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+}
+
+nav ul:not(.sidebar) li:nth-child(4)
+{
+    margin-left: auto;
+
+}
+nav ul:not(.sidebar) li:nth-child(7){
+    margin-right: auto;
+}
+nav ul:not(.sidebar) li:nth-child(9){
+
+    margin-right: 20px;
+}
+
+/*Side bar*/
+.sidebar{
+    position:fixed;
+    Top:0;
+    right: 0;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    display: none;
+
+    width: 200px;
+    height: auto;
+
+    background-color: transparent;
+    backdrop-filter:blur(15px);
+
+}
+
+@media(max-width:700px)
+ {
+  .hideonmobile{
+    display: none;
+
+    margin: 0;
+    padding: 0;
+  }  
+  .feature
+  {
+    margin-right: auto;
+  }
+  
+  .hideonlaptop
+  {
+    display: block;
+  }
+}
+@media(min-width:700px)
+{
+    .hideonlaptop
+    {
+      display: none;
+    }
+}
+
+
+
+
+

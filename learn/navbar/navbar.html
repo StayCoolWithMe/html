@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navar.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <nav> <!--Nav is like a dive, but in different name-->
+                <ul class="sidebar"> <!--ul is like the left right middle section in the youtube nav -->
+                   <li onclick="hidesidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg>
+                   </a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Section</a></li>
+                    <li><a href="#">Satus</a></li>
+                    <li><a href="#">SNT</a></li>
+                    <li><a href="#">School</a></li>
+                    <li><a href="#">Canva</a></li>
+                    <li><a href="#">SIS</a></li>
+                    <li><a href="#">Handbook</a></li>
+                </ul>
+                    <ul> <!--ul is like the left right middle section in the youtube nav -->
+                        <li class="feature"><a href="#">Feature</a></li>
+                        <li class="hideonmobile"><a href="#">Home</a></li>
+                        <li class="hideonmobile"><a href="#">Section</a></li>
+                        <li class="hideonmobile"><a href="#">Satus</a></li>
+                        <li class="hideonmobile"><a href="#">SNT</a></li>
+                        <li class="hideonmobile"><a href="#">School</a></li>
+                        <li class="hideonmobile"><a href="#">Canva</a></li>
+                        <li class="hideonmobile"><a href="#">SIS</a></li>
+                        <li class="hideonmobile"><a href="#">Handbook</a></li>         
+                        <li onclick="showsidebar()"><a href="#">
+                            <svg class="hideonlaptop"  xmlns="http://www.w3.org/2000/svg" width="30" style="color: white;" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </a></li>    
+                    </ul>
+            </nav>
+            
+        </div>
+        <div class="container2">
+            container2
+        </div>
+    </div>
+</body>
+<script>
+function showsidebar()
+{
+    let sidebar=document.querySelector(".sidebar");
+    sidebar.style.display='flex';
+}
+function hidesidebar()
+{
+    let sidebar=document.querySelector(".sidebar");
+    sidebar.style.display='none';
+}
+</script>
+</html>
+

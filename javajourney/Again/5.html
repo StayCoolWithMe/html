@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="Email" placeholder="Email"><br>
+    <input type="password" placeholder="password" class="password">
+    <input type="checkbox" class="checkbox">
+    <label for="checkbox">Show/Hide</label><br>
+    <button class="submit_BTN">Submit</button>
+
+    <form>
+        <label for="date">Date:</label>
+        <input type="date" class="date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" class="time"><br>
+
+        <label for="service">Service:</label>
+        <select class="service">            <!--Seleect is for creating a list of option-->
+            <option value="">Select a service</option>
+            <option value="Appointment">Appointment</option>
+            <option value="Car">Car</option>
+            <option value="Room">Room</option>
+        </select><br>
+
+        <label for="name">Name:</label>
+        <input type="text" class="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="text" class="email"><br>
+
+        <button class="submit_form">Sumit form</button>
+
+    </form>
+
+    <div class="sumary">
+        <h3>Book Summary</h3>
+        <p class="date_output"></p>
+        <p class="time_output"></p>
+        <p class="service_output"></p>
+        <p class="name_output"></p>
+        <p class="email_output"></p>
+    </div>
+
+    <style>
+        .sumary{
+            display: none;
+        }
+        .date{
+            margin-top:20px;
+        }
+        .counter{
+            display: flex;
+            gap: 5px;
+        }
+        .Plus_btn,.Minus_btn{
+            margin: 10px;padding: 10px;
+        }
+        .Plus_btn{
+            background-color: #4CAF50;
+            border: none;
+        }
+        .Minus_btn{
+            background-color: red;
+            border: none;
+        }
+        .background-text{
+            padding: 100px;
+            background-color: white;            
+            
+        }
+        .slider{
+            position: relative;
+            width: 50%;
+            margin: auto; /* to align it horizontally */
+            overflow: hidden;
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+        }
+        img.displayslide{
+        display: block;    
+        }
+        .slider button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        .pre{
+            left: 0;
+        }
+        .next{
+            right: 0;
+        }
+        .clock
+        {
+            font-size: 20px; 
+            background-color: antiquewhite;
+            padding: 20px;
+            display: flex;
+            flex: 1;
+            position: relative;
+            vertical-align: middle;
+            border-radius: 20px;
+            border: 1px solid rgb(4, 255, 4);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;gap: 20px;
+        }
+        body{
+            margin-bottom: 1000px;
+        }
+        
+
+      
+        
+    </style>
+
+
+    <h3 class="Counter_text">Counter App</h3>
+    <div class="counter">
+        <button class="Minus_btn">-</button>
+        <h5 class="Counter_Tracker"></h5>
+        <button class="Plus_btn">+</button>
+    </div>
+    
+
+    <h2>Background Color Change</h2>
+    <button class="background-text"></button>
+    <label for="color_optionns">Change Background Color</label>
+    <select class="color_optionns">
+        <option  valu  e="">Color:</option>
+        <option class="green_color" value="Green">Green</option>
+        <option class="black_color" value="Black">Black</option>
+        <option class="white_color" value="White">White</option>
+    </select>
+
+
+
+    <!--Image SLider-->
+    <h2>Image Slider</h2>
+    <div class="slider">
+        <div class="slides">
+            <img id="slide" src="https://th.bing.com/th/id/OIP.Jhcz3Lb89Rr0_JPjELz3mgHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"alt="avengers">
+            <img id="slide" src="https://th.bing.com/th/id/OIP.uElLdWH1XbQVADMbeAbZNgHaEX?rs=1&pid=ImgDetMain" alt="tranformer">
+            <img id="slide" src="https://th.bing.com/th/id/OIP.0JyCSyfUbbOLIBR_nRO93wHaEK?w=257&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"alt="panda">
+        </div>
+        <button class="pre" onclick="preslide()">&lt;</button>
+        <button class="next" onclick="nextslide()">&gt;</button>
+    </div>
+
+
+    <!-- Digital clock -->
+     <div>
+        <h3>DIGITAL CLOCK</h3>
+        <div class="clock">
+            <span class="clockk_result"></span><br>
+            <span class="date_reuslt"></span>
+
+
+        </div>
+        <!-- ` Loan convrter -->
+         <div class="loan_converter">
+            <h3>Loan Converter</h3>
+            <input class="amount_input" type="text" placeholder="Enter your Amount">
+            <input class="interest_input" type="number" placeholder="Interest"><br>
+            <button class="year_input" style="padding: 10px; margin-top: 5px; background-color: white;border: 1px solid;">Year To repay</button>
+
+            <button class="calculate_btn">Calculate</button>
+
+         </div>
+
+
+         <!-- Mobile number validation -->
+        <h3>Mobile Number validation</h3>
+        <input class= "number_input" type="number" placeholder="Enter Your Phone Number:">
+        <button class="submit_number">Save</button>
+        <div class="reminder"></div>
+
+        <!-- Weather app -->
+         <h3>Weather App</h3>
+         <input type="text" placeholder="Enter your city" class="country">
+         <button class="get_weather">Get Weather</button>
+         <div class="wrather"></div>
+
+
+    <!-- Stop watch -->
+     <h3>Stop watch</h3>
+     <h3 class="display_watch"></h3>
+     <button class="start">Start</button>
+     <button class="stop">Stop</button>
+     <button class="reset">Reset</button>
+     <button class="continuebtn">Continue</button>
+
+       <script src="5.js"></script>
+</body>
+</html>
+
+
+
+

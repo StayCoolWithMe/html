@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Enter the first Number:</label>
+    <input type="number" class="num1" required><br>
+    <label for="num2">Enter the second Number:</label>
+    <input type="number" class="num2" required><br>
+    <button class="Calculate">Calculate</button>
+    <div class="CalculateDiv"></div>
+
+    <div class="FruitDisplay"></div>
+    <button class="AddNewFruit">Add new Fruit</button>
+    <div class="AddFruit_Input" style="display: none">
+        <input type="text" placeholder="Enter new fruit">
+        <button class="submit_fruit">Submit</button>
+    </div>
+
+    <button class="DeleteFruit">Delete the first fruit</button>
+    <button class="SortFruit">sort the fruit base on alphabet</button>
+
+    <!---------------------------------------------------------------->
+    <div class="NUmbers"></div>
+    <div class="DoubleEven"></div>
+    <div class="TripleOdd"></div>
+    <div class="SqareRoot"></div>
+
+    <!-----Todo list-------------------------------------------------------------->
+    <input class="todoInput" type="text" >
+    <input class="Date" type="date">
+    <button class="submitBTN">Submit</button>
+    <div class="todo_Display"></div>
+
+    <!-----NOTE-------------------------------------------------------------------------->
+    <input class="note_tittle" type="text" placeholder="Tittle">
+    <textarea class="note_description" type="text" placeholder="Note Description"></textarea>
+    <button class="SubmitNote"> Add Note</button>
+
+    <div class="NotesDisplay"></div>
+
+    <!------------BOok--------------------------------------------------------------------->
+    <div class="container">
+        <h1>Library Management System</h1>
+
+        <div class="form-section">
+            <h2>Add a Book</h2>
+            <label for="bookTitle">Title:</label>
+            <input type="text" class="title-field" placeholder="Enter book title">
+
+            <label for="bookAuthor">Author:</label>
+            <input type="text"  class="author-field" placeholder="Enter author name">
+
+            <label for="bookYear">Publication Year:</label>
+            <input type="number" class="year-field" placeholder="Enter publication year">
+
+            <button class="Bookbtn">Add Book</button>
+            <div class="BookAddedDisplay"></div>
+        </div>
+
+        <div class="search-section">
+            <h2>Search Books</h2>
+            <label for="searchQuery">Search by Title or Author:</label>
+            <input type="text"  class="search_field" placeholder="Enter search query">
+            <button  class="search_btn">Search</button>
+            <div class="search_result"></div>
+        </div>
+
+        <div class="books-section">
+            <h2>All Books</h2>
+            <div id="booksDisplay" class="books-display">
+                <!-- Books will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="3.js"></script>
+<style>
+</style>
+</html>

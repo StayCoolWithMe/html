@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="status.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="container1-item1">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick="hidesidebar()" class="status"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                          </svg></a></li>
+                        <li ><a href="#">Features</a></li>
+                        <li ><a href="#">Ecosystem</a></li>
+                        <li ><a href="#">Organization</a></li>
+                        <li ><a href="#">Help</a></li>
+                        <li ><a href="#">Collaborate</a></li>
+                        <li ><a href="#">Developers</a></li>
+                        <li ><a href="#">SNT</a></li>
+                        <li ><a href="#">Beta 2 for Windows</a></li>
+                        <li ><a href="#">Mobile early access</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="status"><a href="#">Status</a></li>
+                        <li class="hideonmobile"><a href="#">Features</a></li>
+                        <li class="hideonmobile"><a href="#">Ecosystem</a></li>
+                        <li class="hideonmobile"><a href="#">Organization</a></li>
+                        <li class="hideonmobile"><a href="#">Help</a></li>
+                        <li class="hideonmobile"><a href="#">Collaborate</a></li>
+                        <li class="hideonmobile"><a href="#">Developers</a></li>
+                        <li class="hideonmobile"><a href="#">SNT</a></li>
+                        <li class="hideonmobile"><a href="#">Beta 2 for Windows</a></li>
+                        <li class="hideonmobile"><a href="#">Mobile early access</a></li>
+                        <li onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                          </svg></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container1-item2">
+                <div class="hero">
+                    <button class="Announcing">
+                        <span class="new">New </span> the SNT Hodler Vote Results</button>
+                    <h3>Make the<br> jump to web3</h3>
+                    <h5>Use the open source, decentralised crypto communication super app.</h5>
+                    <div class="hero-button">
+                        <button class="mobileBTN">Mobile early access</button>
+                        <button class="betaBTN">Beta 2 for Windows</button>
+                    </div>
+                </div>
+                <video autoplay muted loop class="video">
+                    <source src="img/video.webm" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+        <div class="container2">
+            <div class="container2-item1">
+                <div class="container2-item1-element1">
+                    <button class="statusBTN">Status Desktop Beta</button>
+                    <h3>Get Status <br>for Desktop</h3>
+                    <h5>Try Status Desktop's public Beta<br>release today.</h5>
+                    <button class="betaBTN">Beta 2 for Windows</button>
+                    <button class="betaBTN">p</button>
+                    <button class="betaBTN">z</button>
+                </div>
+
+                <div class="container2-item1-element2">
+                    <p>Beta releases may occasionally contain bugs and issues.<br>Report bugs on GitHub</p>
+                    <p>Post and upvote feature requests here</p>
+                </div>
+
+            </div>
+            <div class="container2-item2"><img class="container2-item2-img" src="img/random.png"></div>
+        </div>
+        <div class="container3">container3</div>
+        <div class="container4">container4</div>
+        <div class="container5">container5</div>
+        <div class="container6">container6</div>
+        <div class="container7">container7</div>
+        <div class="container8">container8</div>
+        <div class="container9">container9</div>
+        <div class="container10">containe10</div>
+        <div class="container11">container11</div>
+        <div class="container12">container12</div>
+        <div class="container13">container13</div>
+        <div class="container14">container14</div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+<script>
+    function showsidebar()
+    {
+        let sidebar=document.querySelector(".sidebar");
+        sidebar.style.display='flex';
+    }
+
+    function hidesidebar()
+    {
+        let sidebar=document.querySelector(".sidebar");
+        sidebar.style.display='none';
+    }
+
+</script>
+</html>

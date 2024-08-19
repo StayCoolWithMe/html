@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="travel.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">QWE<span>Ry</span></a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+
+        <div class="h-right">
+            <a href="#">Follow us </a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-line"></i></a>
+            <div class="ri-menu-line"></div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h5>Let's</h5>
+            <h1>Plannig your <br>own travel</h1>
+            <p>Indonesia, a southeast Asian nation made up of thousands of volcanic<br> islands,is home of ethnic groups speaking</p>
+            <a href="#" class="btn">Book a trip</a>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="feature-container">
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/nap1.jpg">
+                </div>
+                <h4>Ski Tour</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/nap2.jpg">
+                </div>
+                <h4>Ski Tour</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/nap3.jpg">
+                </div>
+                <h4>Ski Tour</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/nap4.jpg">
+                </div>
+                <h4>Ski Tour</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="holiday">
+        <div>
+            <img src="img/h1.png">
+        </div>
+
+        <div class="holiday-text">
+            <h5>east nusa tengga</h5>
+            <h2>Have you enjoyed your holiday</h2>
+            <p>You will be amazed if you take part in this sailing Komodo island tour package.So it is also 
+                mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine
+                 tourism. The beautiful waters of Komodo will make you meet many travelers from other countries
+            </p>
+            <a href="#" class="BTN">read more</a>
+        </div>
+    </section>
+    
+    
+    <script>
+        const header=document.querySelector("header");
+        window.addEventListener("scroll",function()
+    {
+        header.classList.toggle("sticky",window.scrollY>60)
+    })
+    </script>
+</body>
+</html>

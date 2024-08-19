@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            color: black;
+    
+     
+        }
+        .container{
+            display: grid;
+             grid-template-columns: 70px 240px 70px;
+             grid-template-rows: 50px 100px 50px;
+             width: 550px;
+             gap:10px;   
+        }
+        .container1{
+            display: grid;
+             grid-template-columns: 70px 240px 70px;
+             grid-template-rows: 50px 100px 50px;
+             width: 550px;
+            
+             gap:10px;}
+            
+        .header{
+            grid-column: 1/4;
+            background:plum;
+        }
+        .footer{
+            grid-column: 1/4;
+            background-color: tomato;
+        }
+        .left{
+            background:lawngreen;
+        }
+        .right{
+            background: teal;
+        }
+        .middle{
+            background: indianred;
+        }
+        .web{
+            display: flex;
+            max-width: 1536px;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            margin-bottom: 30px;
+        
+        }
+        .accordin{
+            padding: 5px 18px;
+            border-radius: 5px;
+            width: 100%;
+    
+            border: none;
+            background-color: rgb(77, 77, 77);
+            color:white;
+        }
+        .active,.accordin:hover{
+            background-color: gray;
+        }
+        .answer{
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+        .accordin:after{
+            padding: 35px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="web">
+    <div class="container">
+        <div class="header">header</div>
+        <div class="left"> left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+        <div class="footer">fotter</div>
+    </div>
+    <div class="container1">
+        <div class="header">header</div>
+        <div class="left"> left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+        <div class="footer">fotter</div>
+        </div>
+</div>
+    <button class="accordin">First question</button>
+    <div class="answer"><p>The first answer goes here</p></div>
+    <button class="accordin">Second question</button>
+    <div class="answer"><p>The second answer goes here</p></div>
+    <button class="accordin">Third question</button>
+    <div class="answer"><p>The third answer goes here</p></div>
+    <script>
+        // JavaScript code
+        var accordions = document.querySelectorAll('.accordin');
+        accordions.forEach(function(accordion) {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+
+                var answer = this.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

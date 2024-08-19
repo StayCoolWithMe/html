@@ -180,6 +180,191 @@ You can watch as much as you want, whenever you want without a single commercial
                 });
             });
         });
+        document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle form submission when user clicks "Get Started" button
+    document.querySelector('.bt button').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        var email = document.querySelector('.bt input').value;
+        if (validateEmail(email)) {
+            // Perform further actions here, such as submitting the form or displaying a success message
+            alert('Email validated successfully. Proceed with form submission or other actions.');
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+
+    // Function to validate email address format
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+
+    document.querySelector('.languague').addEventListener('change', function() {
+        var selectedLanguage = this.value;
+        alert('Language changed to: ' + selectedLanguage);
+    });
+    var accItems = document.querySelectorAll('.accordin li');
+    accItems.forEach(function(item) {
+        var label = item.querySelector('label');
+        var content = item.querySelector('.content');
+        var input = item.querySelector('input[type="radio"]');
+        label.addEventListener('click', function() {
+            content.classList.toggle('active');
+            input.checked = !input.checked;
+            accItems.forEach(function(otherItem) {
+                if (otherItem !== item) {
+                    otherItem.querySelector('.content').classList.remove('active');
+                    otherItem.querySelector('input[type="radio"]').checked = false;
+                }
+            });
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        });
+    });
+
+
+    const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 100) {
+            scrollToTopButton.classList.add("show");
+        } else {
+            scrollToTopButton.classList.remove("show");
+        }
+    });
+
+    scrollToTopButton.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    const lazyImages = document.querySelectorAll('img.lazy');
+
+    const lazyLoad = target => {
+        const io = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    const src = img.getAttribute('data-src');
+                    img.setAttribute('src', src);
+                    img.classList.remove('lazy');
+                    observer.disconnect();
+                }
+            });
+        });
+
+        io.observe(target);
+    };
+
+    lazyImages.forEach(lazyLoad);
+
+  
+    const body = document.querySelector("body");
+    const colors = ["#ff7f0e", "#1f77b4", "#2ca02c", "#d62728"]; // Add your desired colors here
+
+    setInterval(() => {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        body.style.backgroundColor = randomColor;
+    }, 5000); 
+
+    
+});
+document.addEventListener("DOMContentLoaded", function() {
+
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        });
+    });
+
+ 
+    const imageSliders = document.querySelectorAll('.image-slider');
+
+    imageSliders.forEach(slider => {
+   
+    });
+
+
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+
+      
+            modal.style.display = 'block';
+            modal.classList.add('fade-in');
+        });
+    });
+
+ 
+    const scrollElements = document.querySelectorAll('.scroll-reveal');
+
+    scrollElements.forEach(element => {
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        revealObserver.observe(element);
+    });
+
+    
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+          
+        });
+    });
+
+
+    const tooltips = document.querySelectorAll('.tooltip');
+
+    tooltips.forEach(tooltip => {
+        tooltip.addEventListener('mouseover', function() {
+           
+        });
+
+        tooltip.addEventListener('mouseout', function() {
+         
+        });
+    });
+});
+
+
+
     </script>
   
 </body>
