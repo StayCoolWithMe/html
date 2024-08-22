@@ -2,15 +2,15 @@ import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Serv
 import {Gear, Brake, Outlet, Rider} from '../assets/images/index';
 export const Arival_Feature=[
     {
+        id:1,
         text:'Riprock 24-Gloss Blaze Orange/Smoke',
         imgURL:Bike2,
         from:'Guff',
         price:'$700.00USD',
         btn:'New',
-        
-
     },
     {
+        id:2,
         text:'Sirrux X5.0-Satin Red Tint/Black/Gray',
         imgURL:Bike3,
         from:'Enduro',
@@ -20,6 +20,7 @@ export const Arival_Feature=[
 
     },
       {
+        id:3,
         text:'Turbo Combo-Sl 5.0 -Smoke/Transparent',
         imgURL:Bike4,
         from:'Diamond',
@@ -30,6 +31,7 @@ export const Arival_Feature=[
 
     },
       {
+        id:4,
         text:'Stumpjumper 15Pro -Satin Green/Gunmental',
         imgURL:Bike5,
         from:'Extreme',
@@ -38,6 +40,7 @@ export const Arival_Feature=[
 
     },
       {
+        id:5,
         text:'Turbo Combo 4.0 IGH -Cast Black',
         imgURL:Bike6,
         from:'Obus',
@@ -47,6 +50,7 @@ export const Arival_Feature=[
 
     },
       {
+        id:6,
         text:'Roubaix SL8 Pro -Gloss Metalic Pine',
         imgURL:Bike7,
         from:'Diamond',
@@ -55,6 +59,7 @@ export const Arival_Feature=[
 
     },
       {
+        id:7,
         text:'Roll 3.0 Low Entry',
         imgURL:Bike8,
         from:'Guff',
@@ -63,6 +68,7 @@ export const Arival_Feature=[
 
     },
      {
+        id:8,
         text:'Termac SL7 Comp -Gloss Metalic Spruce',
         imgURL:Bike9,
         from:'Obus',
@@ -72,6 +78,7 @@ export const Arival_Feature=[
 
     },
      {
+        id:9,
         text:'Crux Expert -Gloss Carbon/Tarmac Black',
         imgURL:Bike10,
         from:'Steel',
@@ -79,7 +86,14 @@ export const Arival_Feature=[
         btn:'New',
         salebtn:'Sale',
     },
-];
+    
+].map((item)=>(
+  {
+    ...item,
+    addToCart:'Add To Cart'
+
+  }
+));
 
 
 export const Explores=[

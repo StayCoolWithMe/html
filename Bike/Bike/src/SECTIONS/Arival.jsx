@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import {Arival_Feature} from '../CONSTAINTS/index';
 import {ArivalCart} from '../SECTIONS/ArivalCart'
+
 export const Arival = () => {
+  const [cart,setCart]=useState([]);
+   const handleAddtoCart=(id)=>{
+    const item=Arival_Feature.find((feature)=>(feature.id)==id);
+    // const newWindow = window.open("about:blank", "_self");
+    if(item)
+    {
+      setCart([...cart,item]);
+      console.log(id);
+    }
+  }
   return (
     <div>
       <div className="flex justify-between flex-1 flex-wrap items-center flex-row max-sm:flex-col max-sm:items-start">
@@ -13,7 +25,7 @@ export const Arival = () => {
           {
             Arival_Feature.map((feature)=>
             (
-              <ArivalCart key={feature.text} {...feature}/>
+              <ArivalCart key={feature.id} {...feature} handleAddtoCart={handleAddtoCart}  />
             ))
           }
         </div>
