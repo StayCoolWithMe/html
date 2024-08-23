@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import Detail from '../SECTIONS/Detail';
 
+
+
 export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, price, handleAddtoCart, id, addToCart}) => {
   
+
+
+
   return (
     <div  className="flex border flex-wrap flex-1 gap-4 max-sm:h-[510px] max-sm:gap-6 justify-start px-3 h-[500px] max-md:h-[600px] items-start w-full max-sm:w-full hover:bg-gray-100 transition duration-100 hover:translate-y-[-5px]">
       <div>

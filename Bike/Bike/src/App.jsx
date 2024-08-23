@@ -7,7 +7,6 @@ import {Nav} from '../src/SECTIONS/Nav';
 
 
 export default function App() {
-
   return (
     <main className="relative">
       <nav><Nav/></nav>

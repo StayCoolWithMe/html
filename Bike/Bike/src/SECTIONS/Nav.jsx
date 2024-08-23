@@ -1,21 +1,13 @@
 import {hamburger} from '../assets/icons/index';
 import {Logo} from '../assets/images/index';
 import {Buy} from '../assets/images/index';
-import { useState,useEffect } from 'react';
 
-export const Nav = () => {
-  const [scrolled, setScrolled] = useState(false);
-    const handleScroll = () => {
-    setScrolled(window.scrollY > 50); // Adjust this value as needed
-  };
+export let count=0;
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+export const Nav = ({}) => {
   
   return (
-    <header className={`px-5 fixed py-8  z-10 w-full bg-white transition-all duration-300 ${scrolled ? 'px-4 py-4' : 'px-8 py-8'}`}>
+    <header className={`px-5  fixed py-8  z-20 w-full bg-white `}>
         <nav className="flex flex-row flex-wrap flex-1 justify-between items-center max-container">
             
             {/* first img */}
@@ -27,7 +19,8 @@ export const Nav = () => {
             </ul>
             {/* Third div */}
             <div className='flex flex-row flex-1 flex-wrap justify-end gap-5 items-center'>
-                <a href=""><img src={Buy} alt="Buy" /></a> 
+                <a className='relative' href=""><img src={Buy} alt="Buy" /></a> 
+                <p className='absolute right-9 top-8 bg-red-500 px-1 text-[10px] rounded-full' >{count}</p>
                 <a href=""><img src={hamburger} alt="hamburgr" className='w-[25px] h-[25px] hidden max-md:block' /></a>
             </div>
             

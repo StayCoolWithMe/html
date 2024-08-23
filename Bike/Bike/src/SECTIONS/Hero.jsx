@@ -4,7 +4,7 @@ import { Bike1 } from '../assets/images/index';
 export const Hero = () => {
   return (
      <section
-      className="py-5 mt-16 relative padding-x max-container w-full min-h-screen bg-slate-400 "
+      className="py-5 z-2 mt-16 relative padding-x max-container w-full min-h-screen bg-slate-400 "
       style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center',  width: '100%',}}
     >
       <h1 className='font-palanquin font-extrabold m-0 p-0  max-md:max-w-md left-4 absolute max-md:text-[72px] max-md:leading-[1.5] text-8xl text-white max-xl:max-w-xl '>RISE WITH <br /> THE RIDING</h1>

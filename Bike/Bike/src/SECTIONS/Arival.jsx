@@ -1,18 +1,34 @@
 import { useState } from 'react';
 import {Arival_Feature} from '../CONSTAINTS/index';
-import {ArivalCart} from '../SECTIONS/ArivalCart'
+import {ArivalCart} from '../SECTIONS/ArivalCart';
 
-export const Arival = () => {
-  const [cart,setCart]=useState([]);
+
+
+export const Arival = () => 
+  {
+    
+  const cart_array=[];
    const handleAddtoCart=(id)=>{
-    const item=Arival_Feature.find((feature)=>(feature.id)==id);
+//If the find() method finds an element that matches the condition, the value of item will be the entire object that was found.
+    const item=Arival_Feature.find((feature)=>(feature.id)==id); 
+    
     // const newWindow = window.open("about:blank", "_self");
     if(item)
     {
-      setCart([...cart,item]);
-      console.log(id);
+      console.log("Indivitual item"+item);
+      cart_array.push(item);
+      console.log("ALL item:"+cart_array);
+      console.log("Lenght:"+cart_array.length);
+      
+      
     }
   }
+
+
+
+
+
+
   return (
     <div>
       <div className="flex justify-between flex-1 flex-wrap items-center flex-row max-sm:flex-col max-sm:items-start">
