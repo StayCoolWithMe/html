@@ -112,3 +112,97 @@ function is_deposit_valid(number)
             }
     
 }
+
+// --------------------------------------------------------------------------------------------------
+const items=[
+    {
+        id:1,
+        text:"Shoes",
+        price:1000,
+        made:'China'
+    },
+    {
+        id:2,
+        text:"Shirt",
+        price:500,
+        made:'India',
+    },
+    {
+        id:3,
+        text:"Pants",
+        price:800,
+        made:'USA',
+    },
+    {
+        id:4,
+        text:"Watch",
+        price:2000,
+        made:'Japan',
+    },
+    {
+        id:5,
+        text:"Bike",
+        price:15000,
+        made:'Germany',
+    },
+]
+
+let container=document.querySelector(".container");
+items.forEach((item)=>{
+    const div=document.createElement("div");
+    const info=`
+    <p>${item.text}</p>
+    <p>Price: $${item.price}</p>
+    <p> Made in: ${item.made}</p>
+    `
+
+    let button =document.createElement("button");
+    button.textContent="Add to cart";
+    button.onclick=()=>handleAdd(item.id);
+
+    div.innerHTML=info;
+    div.appendChild(button);
+    container.appendChild(div);
+})
+
+const array1=[];
+
+function handleAdd(id){
+    const item=items.find((Element)=>(Element.id)===id);
+    if(item)
+    {
+        console.log("Indivitual item: "+item);
+        array1.push(item);
+        console.log("ALL item: "+array1);
+        display();    }
+}
+
+
+function display(){
+    let dumb=document.querySelector(".dumb");
+    dumb.innerHTML='';
+    array1.forEach((array2)=>{
+        dumb.innerHTML+=`
+            <p>${array2.text}</p>
+    <p>Price: $${array2.price}</p>
+    <p> Made in: ${array2.made}</p>
+        `
+        let button =document.createElement("button");
+        button.textContent="Remove";
+        button.onclick=()=>handleRemove(array2.id);
+        dumb.appendChild(button);
+
+    })
+}
+function handleRemove(id)
+{
+    const index=array1.findIndex((item)=>(item.id)===id);
+    if(index!=-1)
+    {
+        array1.splice(index,1);
+        display();
+    }
+}
+
+
+
