@@ -1,4 +1,4 @@
-
+// How to store value to array
 import { Arival_Feature } from "../CONSTAINTS";
     export const cart_array=[];
     

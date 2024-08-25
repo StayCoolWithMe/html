@@ -3,8 +3,6 @@ import {Arival_Feature} from '../CONSTAINTS/index';
 import {ArivalCart} from '../SECTIONS/ArivalCart';
 import {handleAddtoCart} from '../SECTIONS/Calculation';
 
-
-
 export const Arival = () => 
   {
   return (
