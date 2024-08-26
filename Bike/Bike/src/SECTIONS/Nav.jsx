@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import {hamburger} from '../assets/icons/index';
 import {Logo} from '../assets/images/index';
 import {Buy} from '../assets/images/index';
+
 
 export let count=0;
 
@@ -19,7 +21,7 @@ export const Nav = ({}) => {
             </ul>
             {/* Third div */}
             <div className='flex flex-row flex-1 flex-wrap justify-end gap-5 items-center'>
-                <a className='relative' href=""><img src={Buy} alt="Buy" /></a> 
+                <Link to={`/Cart`} target='_self'><a className='relative' href=""><img src={Buy} alt="Buy" /></a> </Link>
                 <p className='absolute right-9 top-8 bg-red-500 px-1 text-[10px] rounded-full' >{count}</p>
                 <a href=""><img src={hamburger} alt="hamburgr" className='w-[25px] h-[25px] hidden max-md:block' /></a>
             </div>
