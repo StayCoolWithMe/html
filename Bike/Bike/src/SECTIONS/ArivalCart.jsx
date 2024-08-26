@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import Detail from '../SECTIONS/Detail';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, price, handleAddtoCart, id, addToCart}) => {
-  
+  const navigator=useNavigate();
+  const handleNavigate=()=>{
+    navigator(`/detail/${id}`,{state:{text, imgURL, before, from, price, id}})
+  }
   return (
-     <Link to={`/detail/${id}`} target='_self' >
-    <div  className="flex border flex-wrap flex-1 gap-4 max-sm:h-[510px] max-sm:gap-6 justify-start px-3 h-[500px] max-md:h-[600px] items-start w-full max-sm:w-full hover:bg-gray-100 transition duration-100 hover:translate-y-[-5px]">
+     
+    <div onClick={handleNavigate} className="flex border flex-wrap flex-1 gap-4 max-sm:h-[510px] max-sm:gap-6 justify-start px-3 h-[500px] max-md:h-[600px] items-start w-full max-sm:w-full hover:bg-gray-100 transition duration-100 hover:translate-y-[-5px]">
       <div>
         <h3 className="font-palanquin font-semibold text-2xl mt-3">{text}</h3>
         <p className="font-palanquin text-slate-gray text-lg mt-4">{from}</p>
@@ -31,7 +34,7 @@ export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, 
         </div>
       </div>
     </div>
-    </Link>
+    
     
     
   );
