@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, price, handleAddtoCart, id, addToCart,detail_information}) => {
   const navigator=useNavigate();
   const handleNavigate=()=>{
-    navigator(`/detail/${id}`,{state:{text, imgURL, before, from, price, id,detail_information}})
+    navigator(`/detail/${id}`,{state:{text, imgURL,btn, before, from,addToCart, price, id,detail_information}})
   }
   return (
      
