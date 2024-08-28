@@ -25,7 +25,7 @@ export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, 
         <div className="flex justify-between w-full items-center">
           <p className="font-palanquin font-bold text-md">{price}</p>
           <div className="flex flex-row gap-2">
-            <button className="font-palanquin text-white bg-coral-red py-1 px-3 rounded-full" onClick={() => handleAddtoCart(id)}>{addToCart}</button>
+            <button className="font-palanquin text-white bg-coral-red py-1 px-3 rounded-full">{addToCart}</button>
             <button className="border px-3 py-0 border-solid max-sm:hidden border-black rounded-full">{btn}</button>
             {salebtn && (
               <button className="border px-3 py-0 border-coral-red max-sm:hidden text-coral-red rounded-full">{salebtn}</button>

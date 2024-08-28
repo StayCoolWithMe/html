@@ -6,7 +6,7 @@ import {Buy} from '../assets/images/index';
 
 export let count=0;
 
-export const Nav = ({}) => {
+export const Nav = ({answer}) => {
   
   return (
     <header className={`px-5  fixed py-8  z-20 w-full bg-white`}>
@@ -21,8 +21,10 @@ export const Nav = ({}) => {
             </ul>
             {/* Third div */}
             <div className='flex flex-row flex-1 flex-wrap justify-end gap-5 items-center'>
-                <Link to={`/Cart`} target='_self'><a className=' relative' href=""><img src={Buy} alt="Buy" className='bg-gray-100  px-1 py-1 rounded-full' /></a> </Link>
-                <p className=' absolute right-9 top-8 bg-red-500 px-1 text-[10px] rounded-lg' >{count}</p>
+              <div className='relative'>
+                <Link to={`/Cart`} target='_self'><img src={Buy} alt="sop-logo" className='bg-gray-100  px-1 py-1 rounded-full' /></Link>
+                <p id='duck' className=' absolute right-0 top-1 bg-red-400 px-1 text-[10px] rounded-lg' >{answer}</p>
+              </div>
                 <a href=""><img src={hamburger} alt="hamburgr" className='w-[25px] h-[25px] hidden max-md:block' /></a>
             </div>
             

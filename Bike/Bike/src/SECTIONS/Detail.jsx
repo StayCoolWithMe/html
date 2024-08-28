@@ -1,30 +1,36 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import {Nav} from './Nav';
+import {Footer} from './Footer';
+import {handleAddtoCart} from './Calculation';
+
+
     
 
 
 export const Detail = () => {
   const location=useLocation();
   const {text, imgURL, before, from, price,addToCart, id,btn,detail_information}=location.state||{};
+  
+
   return (
     <div className="relative">
       <nav className='pb-12' ><Nav/></nav>
 
-    <div className=' grid pt-12 grid-cols-3 gap-1 max-md:grid-cols-1 mb-[1000px]'>
-     {/* left side */}
-      <div className='col-span-2 px-5 max-md:col-span-3'>
+    <div className=' grid pt-12 grid-cols-3 gap-1 max-md:grid-cols-1 mb-[100px]'>
+     {/* left side -------------------------------------------------------*/}
+      <div className='col-span-2 px-5 max-md:col-span-3 '>
           <img className='bg-gray-100 px-5 py-[100px] h-auto w-full' src={imgURL} alt="pic" />
 
           <div className='mt-5'>
-            <h4 className='mt-5 font-palanquin font-extrabold text-3xl '>Description</h4>
+            <h4 className='mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Description</h4>
             <h5 className='mt-5 font-palanquin font-bold text-lg'>The adventure is waiting for you.</h5>
             <p className='mt-5 font-montserrat leading-7 text-md '>With a top quality aluminium frame and a Shimano groupset, the BROAM | 30 is a great choice for anyone who wants a versatile bike that is capable of taking on numerous adventures. Ready to take pannier racks, mudguards and panniers, the BROAM can accompany you on bikepacking or long overland tours. Comfortable on tarmac or gravel roads, the BROAM offers an exciting mix for riders of all skill levels.</p>
             <p className='mt-5 font-montserrat leading-7 text-md '>The combination of Shimano components on the BROAM | 30 offers a wide range of gear ratios with a 2x drivetrain, making it versatile for flat terrain, climbs and descents, while retaining the ease of use for which Shimano is renowned.</p>
             <p className='mt-5 font-montserrat leading-7 text-md '>The BROAM frame is equipped with various mounting points for attaching bags, mudguards and pannier racks. Whether you're a commuter or equipped for long-distance adventures, the versatility is at your fingertips.</p>
           </div>
 
-          <h5 className='mt-10  font-palanquin font-bold text-lg '>Specifications.</h5>         
+          <h5 className='mt-10  mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Specifications</h5>         
          {/* Bike spec */}
           <div className='relative w-full mt-12'>
                 <div className='grid grid-cols-2 max-md:grid-cols-1  gap-12 mt-10 max-md:gap-2 gap-y-50'>
@@ -123,23 +129,44 @@ export const Detail = () => {
                 <p className='font-montserrat mt-3 text-slate-gray font-md' >That’s our quality promise – if you’re not 100% happy with your bike, we’re not happy either..</p>
               </details>
           </div> 
-
-
-
       </div>
-      {/* Side bar */}
-      <div className="max-md:hidden xl:fixed md:right-[20px] xl:right-8  xl:block mt-3">
+
+
+      {/* Side bar ---------------------------------------------------------*/}
+      <div className="px-5 right-5 mt-3">
         <h3 className='font-palanquin text-xl font-semibold mb-5'>{text}</h3>
+
         <p className='font-palanquin text-slate-gray mb-5 text-xl'>{from}</p>
+
         <p className='font-motserrat text-2xl font-semibold'>{price}</p>
+        {/* size---------------------------------------- */}
+        <p className='font-motserrat text-md font-semibold mt-5 '>SIZE</p>
+        <div className='flex gap-3 mt-3'>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S1</p>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S2</p>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S3</p>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S4</p>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S5</p>
+        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S6</p>
+        </div>
+
+
+
+
+        <p></p>
+        {/* Quantity------------------------------ */}
         <p className='font-motserrat text-md font-semibold mt-5 '>Quantity</p>
         <input type="number" className='border-2 py-2 px-2 mt-3 w-1/2 bg-gray-100' defaultValue={1}/>
-        <button className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
+        <button onClick={()=>{handleAddtoCart(id)}}  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
 
 
       </div>
     </div>
 
+    {/* Footer----------------------------- */}
+    <footer className='bg-black py-5 px-5'>
+    <Footer/>
+    </footer>
     </div>
  
   );

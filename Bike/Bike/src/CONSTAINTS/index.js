@@ -261,7 +261,7 @@ export const Arival_Feature=[
 ].map((item)=>(
   {
     ...item,
-    addToCart:'Add To Cart'
+    addToCart:'Detail'
 
   }
 ));
