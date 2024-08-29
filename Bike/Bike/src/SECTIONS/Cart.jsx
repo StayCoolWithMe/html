@@ -1,8 +1,11 @@
-
+import {Nav} from './Nav'
 
 const Cart = () => {
   return (
-    <div>This is the cart </div>
+    <div>
+      <Nav/>
+      <p>This is the cart </p>
+      </div>
   )
 }
 

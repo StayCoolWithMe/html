@@ -2,14 +2,13 @@ import { Link } from 'react-router-dom';
 import {hamburger} from '../assets/icons/index';
 import {Logo} from '../assets/images/index';
 import {Buy} from '../assets/images/index';
-
-
-export let count=0;
+import { useState,useEffect } from 'react';
 
 export const Nav = ({answer}) => {
+
   
   return (
-    <header className={`px-5  fixed py-8  z-20 w-full bg-white`}>
+    <header className="px-5  fixed py-8  z-20 w-full bg-white">
         <nav className="flex flex-row flex-wrap flex-1 justify-between items-center max-container">
             
             {/* first img */}

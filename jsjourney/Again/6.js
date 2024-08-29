@@ -182,7 +182,8 @@ function display(){
     let dumb=document.querySelector(".dumb");
     dumb.innerHTML='';
     array1.forEach((array2)=>{
-        dumb.innerHTML+=`
+        let ht=document.createElement("div");
+        ht.innerHTML=`
             <p>${array2.text}</p>
     <p>Price: $${array2.price}</p>
     <p> Made in: ${array2.made}</p>
@@ -190,7 +191,8 @@ function display(){
         let button =document.createElement("button");
         button.textContent="Remove";
         button.onclick=()=>handleRemove(array2.id);
-        dumb.appendChild(button);
+        ht.appendChild(button);
+        dumb.appendChild(ht);
 
     })
 }
@@ -203,6 +205,118 @@ function handleRemove(id)
         display();
     }
 }
+
+
+// -------------------------------------------------------------------
+const products=[
+    {
+        name:'shoes',
+        price: 100,
+        made: 'china',
+        id:1,
+        type:'cloth',
+    },
+    {
+        name:'bag',
+        price:50,
+        made: 'india',
+        id:2,
+        type:'cloth',
+    }
+    ,{
+        name:'shirt',
+        price: 70,
+        made: 'usa',
+        id:3,
+        type:'cloth',
+    },
+    {
+        name:'basketball',
+        price: 80,
+        id:4,
+        made: 'usa',
+        type:'sport',
+    },
+    {
+        name:'football',
+        price: 90,
+        made: 'usa',
+        id:5,
+        type:'sport',
+    }
+];
+let show=document.querySelector(".show");
+display_products();
+function display_products(){
+let holder=document.querySelector(".holder");
+
+products.forEach((product)=>{
+    let diV=document.createElement("div");
+    diV.innerHTML='';
+    diV.innerHTML+=`<p>Product Name: ${product.name}</p>
+                    <p>ID: ${product.id}</p>
+                    <p>Made from: ${product.made}</p>
+                    <p>Price: ${product.price}</p>`;
+    let button=document.createElement("button");
+    button.textContent="Add to Cart";
+    button.onclick=()=>handle_add_product(product.id);
+    diV.appendChild(button);
+    holder.appendChild(diV);
+})
+}
+
+ let products_array=[];
+function handle_add_product(id){
+    const product=products.find((element)=>(element.id)==id);
+    if(product)
+    {
+        console.log("Item indivitually :"+ product);
+        products_array.push(product);
+        console.log("All item: "+products_array);
+        display_product();
+    }
+}
+
+function display_product(){
+    show.innerHTML='';
+    
+    products_array.forEach((array)=>
+    {
+        let HTmL=document.createElement("div");
+        HTmL.innerHTML+=`<p>Product Name: ${array.name}</p>
+                        <p>ID: ${array.id}</p>
+                        <p>Price: ${array.price}</p>`;
+        let button=document.createElement("button");
+        button.innerHTML="Remove from cart";
+        button.onclick=()=>handleRemove_product(array.id);
+        HTmL.appendChild(button);
+        show.appendChild(HTmL);
+    })
+}
+
+function handleRemove_product(id)
+{
+    const index=products_array.findIndex((element)=>(element.id)==id);
+    if(index!==-1)
+    {
+        products_array.splice(index,1);
+        display_product();
+    }
+}
+
+let selection=document.querySelector(".selection");
+selection.addEventListener("change",function(){
+    if(this.value='hi_to_low')
+    {
+        products.sort((a,b)=>b.price=a.price);
+    }
+    else{
+        products.sort((a,b)=>a.price-b.price);
+    }
+    display_products();
+    
+   
+})
 
 
 
