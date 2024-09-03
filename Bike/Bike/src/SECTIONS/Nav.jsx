@@ -22,7 +22,7 @@ export const Nav = ({answer}) => {
             <div className='flex flex-row flex-1 flex-wrap justify-end gap-5 items-center'>
               <div className='relative'>
                 <Link to={`/Cart`} target='_self'><img src={Buy} alt="sop-logo" className='bg-gray-100  px-1 py-1 rounded-full' /></Link>
-                <p id='duck' className=' absolute right-0 top-1 bg-red-400 px-1 text-[10px] rounded-lg' >{answer}</p>
+                <p id='duck' className=' absolute right-0 top-1 bg-red-400 px-1 text-[10px] rounded-lg' ></p>
               </div>
                 <a href=""><img src={hamburger} alt="hamburgr" className='w-[25px] h-[25px] hidden max-md:block' /></a>
             </div>

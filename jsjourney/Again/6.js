@@ -247,9 +247,10 @@ const products=[
 ];
 let show=document.querySelector(".show");
 display_products();
+
 function display_products(){
 let holder=document.querySelector(".holder");
-
+holder.innerHTML="";
 products.forEach((product)=>{
     let diV=document.createElement("div");
     diV.innerHTML='';
@@ -259,6 +260,13 @@ products.forEach((product)=>{
                     <p>Price: ${product.price}</p>`;
     let button=document.createElement("button");
     button.textContent="Add to Cart";
+
+    let quantity=document.createElement("input");
+    quantity.type="number";
+    quantity.value=1;
+    quantity.style.width="30px";
+    quantity.style.display="block";
+    diV.appendChild(quantity);
     button.onclick=()=>handle_add_product(product.id);
     diV.appendChild(button);
     holder.appendChild(diV);
@@ -289,6 +297,8 @@ function display_product(){
         let button=document.createElement("button");
         button.innerHTML="Remove from cart";
         button.onclick=()=>handleRemove_product(array.id);
+
+
         HTmL.appendChild(button);
         show.appendChild(HTmL);
     })
@@ -306,17 +316,140 @@ function handleRemove_product(id)
 
 let selection=document.querySelector(".selection");
 selection.addEventListener("change",function(){
-    if(this.value='hi_to_low')
+    if(this.value==='hi_to_low')
     {
-        products.sort((a,b)=>b.price=a.price);
+        products.sort((a,b)=>b.price-a.price);
     }
     else{
         products.sort((a,b)=>a.price-b.price);
     }
-    display_products();
-    
-   
+    display_products();  
 })
+
+
+let type_selection = document.querySelector(".type_selection");
+
+type_selection.addEventListener("change", function () {
+    let holder = document.querySelector(".holder");
+    holder.innerHTML = ""; // Clear the current items
+
+    if (type_selection.value === 'sport') {
+        // Filter products of type 'sport'
+        let filter_item = products.filter((product) => product.type === 'sport');
+
+        // Display the filtered items
+        filter_item.forEach((product) => {
+            let diV = document.createElement("div");
+            diV.innerHTML = `
+                <p>Product Name: ${product.name}</p>
+                <p>ID: ${product.id}</p>
+                <p>Made from: ${product.made}</p>
+                <p>Price: ${product.price}</p>`;
+            
+            let button = document.createElement("button");
+            button.textContent = "Add to Cart";
+            button.onclick = () => handle_add_product(product.id);
+            diV.appendChild(button);
+            holder.appendChild(diV);
+        });
+    } else {
+        // Filter products that are not of type 'sport'
+        let filter_item = products.filter((product) => product.type === 'cloth');
+
+        // Display the filtered items
+        filter_item.forEach((product) => {
+            let diV = document.createElement("div");
+            diV.innerHTML = `
+                <p>Product Name: ${product.name}</p>
+                <p>ID: ${product.id}</p>
+                <p>Made from: ${product.made}</p>
+                <p>Price: ${product.price}</p>`;
+            
+            let button = document.createElement("button");
+            button.textContent = "Add to Cart";
+            button.onclick = () => handle_add_product(product.id);
+            diV.appendChild(button);
+            holder.appendChild(diV);
+        });
+    }
+});
+
+
+// ITEm3--------------------------------------------------
+const Item3=[
+    {
+        name:'pizza',
+        id:1,
+        price:15,
+        made:'italy',
+        type:'food',
+    },
+    {
+        name:'burger',
+        id:2,
+        price:10,
+        made:'usa',
+        type:'food',
+    },
+    {
+        name:'coffee',
+        id:3,
+        made:'Cambodia',
+        price:5,
+        type:'drink',
+    },
+    {
+        name:'tea',
+        id:4,
+        price:3,
+        made:'china',
+        type:'drink',
+    }
+];
+let Wraper=document.querySelector(".Wraper");
+Wraper.innerHTML="";
+
+let item_array=JSON.parse(localStorage.getItem("ITems"))||[];
+
+Item3.forEach((item)=>{
+    let div=document.createElement('div');
+    div.innerHTML='';
+    div.innerHTML+=`<p>Name: ${item.name}</p>
+                    <p>Price: ${item.price}</p>
+                    <p>Type: ${item.type}</p>`;
+    let button=document.createElement("button");
+    button.onclick=()=>handle_add_item3(item.id);
+    button.innerHTML='Add to Cart';
+    div.appendChild(button);
+    Wraper.appendChild(div);    
+})
+
+
+function handle_add_item3(id)
+{
+    let item=Item3.find(item=>item.id===id);
+
+     
+
+      if(item)
+    {
+        console.log("Indivitual item: "+item);
+        item_array.push(item);
+        console.log('All items:' +item_array);
+
+        save_to_local();
+    }
+    window.location.href = 'detail.html';
+    
+    
+}
+
+function save_to_local()
+{
+    localStorage.setItem("ITems",JSON.stringify(item_array));
+}
+
+
 
 
 

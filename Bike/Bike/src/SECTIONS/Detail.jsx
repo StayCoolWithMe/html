@@ -5,6 +5,7 @@ import {Footer} from './Footer';
 import {handleAddtoCart} from './Calculation';
 
 
+
     
 
 
@@ -30,7 +31,7 @@ export const Detail = () => {
             <p className='mt-5 font-montserrat leading-7 text-md '>The BROAM frame is equipped with various mounting points for attaching bags, mudguards and pannier racks. Whether you're a commuter or equipped for long-distance adventures, the versatility is at your fingertips.</p>
           </div>
 
-          <h5 className='mt-10  mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Specifications</h5>         
+          <h5 className=' mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Specifications</h5>         
          {/* Bike spec */}
           <div className='relative w-full mt-12'>
                 <div className='grid grid-cols-2 max-md:grid-cols-1  gap-12 mt-10 max-md:gap-2 gap-y-50'>
@@ -141,23 +142,21 @@ export const Detail = () => {
         <p className='font-motserrat text-2xl font-semibold'>{price}</p>
         {/* size---------------------------------------- */}
         <p className='font-motserrat text-md font-semibold mt-5 '>SIZE</p>
-        <div className='flex gap-3 mt-3'>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S1</p>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S2</p>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S3</p>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S4</p>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S5</p>
-        <p className='bg-gray-100 py-1 px-2 rounded-full text-md font-semibold  '>S6</p>
-        </div>
 
-
-
-
-        <p></p>
+        <select id='size_selection_options' className='border-2 border-black rounded-md px-3 py-1  mt-5'>
+          <option value=""></option>
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+          <option value="S3">S3</option>
+          <option value="S4">S4</option>
+          <option value="S5">S5</option>
+          <option value="S6">S6</option>
+        </select>
+  
         {/* Quantity------------------------------ */}
         <p className='font-motserrat text-md font-semibold mt-5 '>Quantity</p>
         <input type="number" className='border-2 py-2 px-2 mt-3 w-1/2 bg-gray-100' defaultValue={1} min={1}/>
-        <button onClick={()=>{handleAddtoCart(id)}}  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
+        <button onClick={()=>{handleAddtoCart(id)} }  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
 
 
       </div>
