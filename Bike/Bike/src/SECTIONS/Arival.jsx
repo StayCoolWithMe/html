@@ -17,7 +17,7 @@ export const Arival = () =>
           {
             Arival_Feature.map((feature)=>
             (
-              <ArivalCart key={feature.id} {...feature} handleAddtoCart={handleAddtoCart}  />
+              <ArivalCart key={feature.id} {...feature}   />
             ))
           }
         </div>

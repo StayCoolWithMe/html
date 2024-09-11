@@ -152,10 +152,11 @@ export const Detail = () => {
           <option value="S5">S5</option>
           <option value="S6">S6</option>
         </select>
+        
   
         {/* Quantity------------------------------ */}
         <p className='font-motserrat text-md font-semibold mt-5 '>Quantity</p>
-        <input type="number" className='border-2 py-2 px-2 mt-3 w-1/2 bg-gray-100' defaultValue={1} min={1}/>
+        <input id='quantity_selection' type="number" className='border-2 py-2 px-2 mt-3 w-1/2 bg-gray-100' defaultValue={1} min={1}/>
         <button onClick={()=>{handleAddtoCart(id)} }  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
 
 
