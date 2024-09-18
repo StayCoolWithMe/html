@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import {Nav} from './Nav';
 import {Footer} from './Footer';
 import {handleAddtoCart} from './Calculation';
-
+import {handlePrice} from './Calculation';
 
 
     
@@ -139,7 +139,7 @@ export const Detail = () => {
 
         <p className='font-palanquin text-slate-gray mb-5 text-xl'>{from}</p>
 
-        <p className='font-motserrat text-2xl font-semibold'>{price}</p>
+        <p className='font-motserrat text-2xl font-semibold'>${price}USD</p>
         {/* size---------------------------------------- */}
         <p className='font-motserrat text-md font-semibold mt-5 '>SIZE</p>
 
@@ -157,7 +157,7 @@ export const Detail = () => {
         {/* Quantity------------------------------ */}
         <p className='font-motserrat text-md font-semibold mt-5 '>Quantity</p>
         <input id='quantity_selection' type="number" className='border-2 py-2 px-2 mt-3 w-1/2 bg-gray-100' defaultValue={1} min={1}/>
-        <button onClick={()=>{handleAddtoCart(id)} }  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
+        <button onClick={()=>{handleAddtoCart(id);handlePrice();window.location.reload()}}  className='mt-5 py-5 w-full bg-blue-500 text-white font-palanquin font-semibold rounded-md text-xl'>Add To Cart</button>
 
 
       </div>

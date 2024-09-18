@@ -1,4 +1,5 @@
 import {Nav} from './Nav';
+import {handlePrice} from './Calculation';
 
  function get_from_local()
   {
@@ -22,6 +23,7 @@ import {Nav} from './Nav';
           cart_array.splice(index,1);
         }
         localStorage.setItem("cart_array",JSON.stringify(cart_array));
+        handlePrice();
         window.location.reload(); 
       }
       else{
@@ -29,10 +31,8 @@ import {Nav} from './Nav';
       }
     }
   }
-
+  
 export const Cart = () => {
- 
-
   return (
     <div className='relative'>
       <nav className='pb-12'><Nav/></nav>
@@ -67,26 +67,26 @@ export const Cart = () => {
             </div>
             </div>
         {/* SIDEBAR-------------------------------------------------------- */}
+        
             <div className='mt-16 py-5 border-2  h-auto  '>
               <h1 className='px-3 font-bold font-montserrat mt-5 text-2xl'>Order Summary</h1>
               <div className='px-3 mt-3 grid grid-cols-2 gap-3'>
                     <p className='font-montserrat '>Item:</p>
-                    <p className='font-montserrat ml-14'>00</p>
+                    <p id='price' className='font-montserrat ml-14'></p>
 
                     <p className='font-montserrat'>Total before tax:</p>
-                    <p className='font-montserrat ml-14'>00</p>
+                    <p  id='price2' className='font-montserrat ml-14'></p>
 
                     <p className='font-montserrat'>Estimate tax (10%):</p>
-                    <p className='font-montserrat ml-14'>00</p>
+                    <p id='total_with_tax' className='font-montserrat ml-14'></p>
               </div>
               <div className='px-3 mt-3 grid grid-cols-2 gap-4'>
               <h1 className=' font-bold font-montserrat text-red-500  text-2xl '>Order total:</h1>
-              <p className='font-montserrat ml-14'>00</p>
+              <p id='overall' className='font-montserrat ml-14'></p>
               </div>
 
             </div>
-            <div id='price_div'></div>
-        
+            
         </div>
 
       </div>

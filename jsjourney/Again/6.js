@@ -282,6 +282,7 @@ function handle_add_product(id){
         products_array.push(product);
         console.log("All item: "+products_array);
         display_product();
+        handlePrice();
     }
 }
 
@@ -375,6 +376,19 @@ type_selection.addEventListener("change", function () {
 });
 
 
+const handlePrice=()=>{
+    let Price_div=document.querySelector(".Price_div");
+    let total=0;
+    if(products_array)
+        {
+            products_array.forEach((element)=>{
+                total+=element.price;
+            })
+            Price_div.innerHTML=`<p>Total Price: ${total}</p>`;
+        } 
+}
+
+
 // ITEm3--------------------------------------------------
 const Item3=[
     {
@@ -448,6 +462,8 @@ function save_to_local()
 {
     localStorage.setItem("ITems",JSON.stringify(item_array));
 }
+
+
 
 
 

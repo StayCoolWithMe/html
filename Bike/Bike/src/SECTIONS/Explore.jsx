@@ -20,8 +20,7 @@ export const Explore = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 sm:gap-4 gap-6 justify-items-center ">
         {
           Explore2.map((explore2)=>(
-            <ExploreCart2 key={explore2.text} {...explore2} />
-            
+            <ExploreCart2 key={explore2.text} {...explore2} />  
           ))
         }
 

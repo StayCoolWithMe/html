@@ -1,12 +1,15 @@
-import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service } from "../assets/images/index";
+import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,} from "../assets/images/index";
+//Renagade, BridgeSport,Crpto,Smash,power_pond,Ready,control,Grid,Brain,Comp,Hd,phenom,Carbon,Team
 import {Gear, Brake, Outlet, Rider} from '../assets/images/index';
+
+
 export const Arival_Feature=[
     {
         id:1,
         text:'Riprock 24-Gloss Blaze Orange/Smoke',
         imgURL:Bike2,
         from:'Guff',
-            price:'$700.00USD',
+            price:'700.00',
             btn:'New',
           detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -34,7 +37,7 @@ export const Arival_Feature=[
         imgURL:Bike3,
         from:'Enduro',
         before:'$8,700.00USD',
-        price:'$2,250.00USD',
+        price:'2250.00',
         btn:'New',
                detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -63,7 +66,7 @@ export const Arival_Feature=[
         imgURL:Bike4,
         from:'Diamond',
         before:'$21,199.00USD',
-        price:'$2,349.00USD',
+        price:'2349.00',
         btn:'New',
         salebtn:'Sale',
               detail_information: {
@@ -92,7 +95,7 @@ export const Arival_Feature=[
         text:'Stumpjumper 15Pro -Satin Green/Gunmental',
         imgURL:Bike5,
         from:'Extreme',
-        price:'$6,000.00USD',
+        price:'6000.00',
         btn:'New',
             detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -120,7 +123,7 @@ export const Arival_Feature=[
         text:'Turbo Combo 4.0 IGH -Cast Black',
         imgURL:Bike6,
         from:'Obus',
-        price:'$3,849.00USD',
+        price:'3849.00',
         btn:'New',
               detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -148,7 +151,7 @@ export const Arival_Feature=[
         text:'Roubaix SL8 Pro -Gloss Metalic Pine',
         imgURL:Bike7,
         from:'Diamond',
-        price:'$8,500.00USD',
+        price:'8500.00',
         btn:'New',
          detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -176,7 +179,7 @@ export const Arival_Feature=[
         text:'Roll 3.0 Low Entry',
         imgURL:Bike8,
         from:'Guff',
-        price:'$1,199.00USD',
+        price:'1199.00',
         btn:'New',
         detail_information: {
           brake: 'Vorne: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse / Hinten: Shimano BR-RX400, 2-Kolben, Hydraulische Scheibenbremse',
@@ -204,7 +207,7 @@ export const Arival_Feature=[
         text:'Termac SL7 Comp -Gloss Metalic Spruce',
         imgURL:Bike9,
         from:'Obus',
-        price:'$4,700.00USD',
+        price:'4700.00',
         btn:'New',
         salebtn:'Sale',
            detail_information: {
@@ -233,7 +236,7 @@ export const Arival_Feature=[
         text:'Crux Expert -Gloss Carbon/Tarmac Black',
         imgURL:Bike10,
         from:'Steel',
-        price:'$4,299.00USD',
+        price:'4299.00',
         btn:'New',
         salebtn:'Sale',
         detail_information: {
@@ -257,6 +260,7 @@ export const Arival_Feature=[
         }
 
     },
+    
     
 ].map((item)=>(
   {

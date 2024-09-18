@@ -3,6 +3,7 @@ import { json } from "react-router-dom";
 import { Arival_Feature } from "../CONSTAINTS";
 
 
+
     export const cart_array=JSON.parse(localStorage.getItem("cart_array"))|| [];
   
 
@@ -19,7 +20,7 @@ import { Arival_Feature } from "../CONSTAINTS";
       const existingItem = cart_array.find(cartItem => cartItem.id === item.id && cartItem.size === size_selection_options);
      if(existingItem)
      {
-      cart_array[existingItem].quantity+=Quantity;
+      existingItem.quantity+=Quantity;
      }
      else{
       cart_array.push(selected_item);
@@ -28,8 +29,10 @@ import { Arival_Feature } from "../CONSTAINTS";
       console.log("ALL item:"+cart_array);
       console.log("Lenght:"+cart_array.length); 
       console.log("ID: "+item.id);
-          handlePrice();
       save_to_local();
+      handlePrice();
+      
+    
      
     }
         
@@ -37,25 +40,42 @@ import { Arival_Feature } from "../CONSTAINTS";
 
   export function save_to_local(){
     localStorage.setItem("cart_array", JSON.stringify(cart_array));
-    alert("Item added to cart!");
-    window.location.reload();
+    alert("Item added to cart!   Please refresh the cart page, if the prices are not visible");
+    
+    
 
   }
   export const handlePrice=()=>{
-    let price_div = document.getElementById("price_div");
-    let total=0;
-   if(cart_array &&Array.isArray(cart_array))
-   {
-    cart_array.forEach((Element)=>{
-      if(Element.price&&Element.quantity)
-      {
-        total+=Element.quantity*Element.price;
-      }
-    })
-   }
-   price_div.innerHTML=total.toString();
 
+   let price=document.getElementById("price");
+   let price2=document.getElementById("price2");
+   let total_with_tax=document.getElementById("total_with_tax");
+   let overall=document.getElementById("overall");
+
+   let total=0;
+    if(cart_array)
+    {
+      cart_array.forEach((item)=>{
+        total+=(parseFloat(item.price)*parseFloat(item.quantity));
+      })
+    }
+    if(price)
+    {
+      price.innerHTML=`$${(total).toFixed(2)}`;
+      let totaL=(total).toFixed(2);
+      price2.innerHTML=`$${(total).toFixed(2)}`;
+      total_with_tax.innerHTML=`$${(total*0.1).toFixed(2)}`;
+      let tax=(total*0.1).toFixed(2);
+      let final=parseFloat(tax)+parseFloat(totaL);
+      overall.innerHTML=`$${final.toFixed(2)}`;
+      
+    }
+ 
   }
+  window.onload=()=>{
+    handlePrice();
+  }
+
 
 
   
