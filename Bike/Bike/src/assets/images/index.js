@@ -40,6 +40,35 @@ import Brake from './Brake.png';
 import Service from './Service.png';
 import Blog from './Blog.png';
 import Event from './Event.png';
+import Renagade from './Renagade.png';
+import BridgeSport from './BridgeSport.png'; 
+import Crpto from './Crpto.png';
+import Smash from './Smash.png';
+import power_pond from './power_pond.png'; 
+import Ready from './Ready.png';
+import control from './control.png';
+import Grid from './Grid.png';
+import Brain from './Brain.png';
+import Comp from './Comp.png';
+import Hd from './Hd.png';
+import phenom from './phenom.png'; 
+import Carbon from './Carbon.png'; 
+import Team from './Team.png';
+
+import Black from './Black.png'; 
+import ClipShoes from './ClipShoes.png';
+import Drybag from './Drybag.png';
+import Gray from './Gray.png';
+import Helmet from './Helmet.png';
+import RedHelmet from './RedHelmet.png';
+import shortShirt from './shortShirt.png';
+import Sigma from './Sigma.png';
+import SWorkShoes from './SWorkShoes.png';
+import Tracker from './Tracker.png';
+
+
+
+
 
 
 
@@ -86,5 +115,31 @@ export {
     thumbnailBackground,
     thumbnailShoe1,
     thumbnailShoe2,
-    thumbnailShoe3
+    thumbnailShoe3,
+
+    Renagade,
+    BridgeSport,
+    Crpto,
+    Smash,
+    power_pond,
+    Ready,
+    control,
+    Grid,
+    Brain,
+    Comp,
+    Hd,
+    phenom,
+    Carbon,
+    Team,
+
+    Black,
+    ClipShoes,
+    Drybag,
+    Gray,
+    Helmet,
+    RedHelmet,
+    shortShirt,
+    Sigma,
+    SWorkShoes,
+    Tracker,
 }

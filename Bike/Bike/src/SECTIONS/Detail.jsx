@@ -4,6 +4,7 @@ import {Nav} from './Nav';
 import {Footer} from './Footer';
 import {handleAddtoCart} from './Calculation';
 import {handlePrice} from './Calculation';
+import { Arival_Feature } from '../CONSTAINTS';
 
 
     
@@ -23,13 +24,23 @@ export const Detail = () => {
       <div className='col-span-2 px-5 max-md:col-span-3 '>
           <img className='bg-gray-100 px-5 py-[100px] h-auto w-full' src={imgURL} alt="pic" />
 
-          <div className='mt-5'>
+          {(id>=1&&id<=9)?(
+            <div className='mt-5'>
             <h4 className='mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Description</h4>
             <h5 className='mt-5 font-palanquin font-bold text-lg'>The adventure is waiting for you.</h5>
             <p className='mt-5 font-montserrat leading-7 text-md '>With a top quality aluminium frame and a Shimano groupset, the BROAM | 30 is a great choice for anyone who wants a versatile bike that is capable of taking on numerous adventures. Ready to take pannier racks, mudguards and panniers, the BROAM can accompany you on bikepacking or long overland tours. Comfortable on tarmac or gravel roads, the BROAM offers an exciting mix for riders of all skill levels.</p>
             <p className='mt-5 font-montserrat leading-7 text-md '>The combination of Shimano components on the BROAM | 30 offers a wide range of gear ratios with a 2x drivetrain, making it versatile for flat terrain, climbs and descents, while retaining the ease of use for which Shimano is renowned.</p>
             <p className='mt-5 font-montserrat leading-7 text-md '>The BROAM frame is equipped with various mounting points for attaching bags, mudguards and pannier racks. Whether you're a commuter or equipped for long-distance adventures, the versatility is at your fingertips.</p>
           </div>
+          ):(
+            <div className='mt-5'>
+                <h4 className='mt-5 font-palanquin font-extrabold max-md:text-3xl text-3xl '>Discover the Unknown</h4>
+                    <h5 className='mt-5 font-palanquin font-bold text-lg'>Your next adventure starts here.</h5>
+                    <p className='mt-5 font-montserrat leading-7 text-md '>Embark on a new journey with a bike designed for endless possibilities. Whether you're exploring city streets or rugged trails, our latest model brings you unmatched versatility and performance. Equipped with a lightweight frame and cutting-edge technology, it's built to conquer any challenge.</p>
+                    <p className='mt-5 font-montserrat leading-7 text-md '>With multiple configurations available, this bike adapts to your needs—whether you're in for a quick commute or an extended tour. Built for comfort and control, it offers a smooth ride across a variety of terrains. The ultimate freedom is just a ride away.</p>
+                    <p className='mt-5 font-montserrat leading-7 text-md '>Take your biking experience to the next level with advanced braking systems, customizable gearing, and robust tires built for longevity. Every detail is crafted to enhance your ride, no matter where your adventure takes you.</p>
+              </div>
+          )}
 
           <h5 className=' mt-5 font-palanquin font-extrabold max-md:text-3xl text-4xl '>Specifications</h5>         
          {/* Bike spec */}
@@ -64,60 +75,82 @@ export const Detail = () => {
                     <div className='font-montserrat text-md'>{detail_information.crankset}</div>
                 </div>  
 
-                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl  '>Wheel</div>
+                {detail_information.wheelSize && (
+              <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Wheel</div>
                     <div className='font-montserrat text-md'>{detail_information.wheelSize}</div>
-                </div>  
+                  </div>
+                )}
 
+                {detail_information.wheelSheet && (
                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl  '>Wheelset</div>
+                    <div className='font-palanquin font-semibold text-xl'>Wheelset</div>
                     <div className='font-montserrat text-md'>{detail_information.wheelSheet}</div>
-                </div>  
+                  </div>
+                )}
 
+                {detail_information.handlebar && (
                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl '>Handlebars</div>
+                    <div className='font-palanquin font-semibold text-xl'>Handlebars</div>
                     <div className='font-montserrat text-md'>{detail_information.handlebar}</div>
-                </div>  
+                  </div>
+                )}
 
+                {detail_information.modelYear && (
                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl '>Model</div>
+                    <div className='font-palanquin font-semibold text-xl'>Model</div>
                     <div className='font-montserrat text-md'>{detail_information.modelYear}</div>
-                </div>  
+                  </div>
+                )}
 
-                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl  '>Frame</div>
-                    <div className='font-montserrat text-md'>{detail_information.frame}</div>
-                </div>  
-
+                {detail_information.frame && (
                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
                     <div className='font-palanquin font-semibold text-xl'>Frame</div>
-                    <div className='font-montserrat text-md'>{detail_information.frameSize}</div>
-                </div>  
+                    <div className='font-montserrat text-md'>{detail_information.frame}</div>
+                  </div>
+                )}
 
+                {detail_information.frameSize && (
                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl  '>Saddle</div>
+                    <div className='font-palanquin font-semibold text-xl'>Frame Size</div>
+                    <div className='font-montserrat text-md'>{detail_information.frameSize}</div>
+                  </div>
+                )}
+
+                {detail_information.saddle && (
+                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Saddle</div>
                     <div className='font-montserrat text-md'>{detail_information.saddle}</div>
-                </div>  
+                  </div>
+                )}
 
-                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl '>Shifter</div>
+                {detail_information.shifter && (
+                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Shifter</div>
                     <div className='font-montserrat text-md'>{detail_information.shifter}</div>
-                </div>  
+                  </div>
+                )}
 
-                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl  '>Rear</div>
+                {detail_information.rearDerailleur && (
+                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Rear Derailleur</div>
                     <div className='font-montserrat text-md'>{detail_information.rearDerailleur}</div>
-                </div>  
+                  </div>
+                )}
 
-                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl '>Front</div>
+                {detail_information.frontDerailleur && (
+                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Front Derailleur</div>
                     <div className='font-montserrat text-md'>{detail_information.frontDerailleur}</div>
-                </div>  
+                  </div>
+                )}
 
-                   <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
-                    <div className='font-palanquin font-semibold text-xl '>Stem</div>
+                {detail_information.stem && (
+                  <div className='grid grid-cols-2 max-md:grid-cols-1 gap-12 mt-10 max-md:gap-2 gap-y-50'>
+                    <div className='font-palanquin font-semibold text-xl'>Stem</div>
                     <div className='font-montserrat text-md'>{detail_information.stem}</div>
-                </div>  
+                  </div>
+                )}
 
 
               <details className='mt-10 bg-gray-100 py-5 px-3'> 

@@ -18,7 +18,7 @@ export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, 
         <p className="font-palanquin text-slate-gray text-lg mt-4">{from}</p>
       </div>
 
-      <img src={imgURL} alt="pic" />
+      <img src={imgURL} alt="pic" className='' />
 
       <div className="flex flex-col w-full">
         <p className="font-palanquin text-sm line-through text-slate-gray">{before}</p>
@@ -26,7 +26,6 @@ export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, 
         <div className="flex justify-between w-full items-center">
           <p className="font-palanquin font-bold text-md">$ {price} USD</p>
           <div className="flex flex-row gap-2">
-            <button className="font-palanquin text-white bg-coral-red py-1 px-3 rounded-full">{addToCart}</button>
             <button className="border px-3 py-0 border-solid  border-black rounded-full">{btn}</button>
             {salebtn && (
               <button className="border px-3 py-0 border-coral-red  text-coral-red rounded-full">{salebtn}</button>

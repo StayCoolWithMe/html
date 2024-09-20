@@ -1,6 +1,5 @@
 import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,} from "../assets/images/index";
-//Renagade, BridgeSport,Crpto,Smash,power_pond,Ready,control,Grid,Brain,Comp,Hd,phenom,Carbon,Team
-import {Gear, Brake, Outlet, Rider} from '../assets/images/index';
+import {Gear, Brake, Outlet, Rider,Renagade, BridgeSport,Crpto,Smash,power_pond,Ready,control,Grid,Brain,Comp,Hd,phenom,Carbon,Team,Black,ClipShoes,Drybag,Gray,Helmet,RedHelmet,shortShirt,Sigma,SWorkShoes,Tracker} from '../assets/images/index';
 
 
 export const Arival_Feature=[
@@ -260,6 +259,328 @@ export const Arival_Feature=[
         }
 
     },
+    {
+      id:10,
+      text:'S-Work Renagade Realt T5/T7',
+      imgURL:Renagade,
+      from:'Obus',
+      price:'80.00',
+      btn:'New',
+        detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:11,
+      text:'Bridge  Sport',
+      imgURL:BridgeSport,
+      from:'Guff',
+      price:'70.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:12,
+      text:'Supacaz Krypto Pedal-Black',
+      imgURL:Crpto,
+      from:'Hard Metal',
+      price:'150.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:13,
+      text:'Pedal-Thermopoly',
+      imgURL:Smash,
+      from:'Hard Metal',
+      price:'56.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:14,
+      text:'Power Comp',
+      imgURL:power_pond,
+      from:'Lizard',
+      price:'150.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:15,
+      text:'S-Work Pathfinder 2Bliss Ready',
+      imgURL:Ready,
+      from:'Obus',
+      price:'80.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:16,
+      text:'Rocal Control SL Team',
+      imgURL:control,
+      from:'Rhomb',
+      price:'125.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:17,
+      text:'Butcher Grid Trail 2Bliss Ready T7',
+      imgURL:Grid,
+      from:'Enduro',
+      price:'80.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:18,
+      text:'RockShox SID SL Ultimate Brain',
+      imgURL:Brain,
+      from:'Extreme',
+      price:'950.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:19,
+      text:'Future Stem Comp',
+      imgURL:Comp,
+      from:'Obus',
+      price:'60.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+   
+    {
+      id:21,
+      text:'S-Works Phenon with Morror',
+      imgURL:phenom,
+      from:'Diamond',
+      price:'450.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:22,
+      text:'Stumpjumper Carbon 27.5 Suspension Link',
+      imgURL:Carbon,
+      from:'Steel',
+      price:'79.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        }
+    },
+    {
+      id:23,
+      text:'Rapcide CLX II Team',
+      imgURL:Team,
+      from:'Rhomb',
+      price:'79.00',
+      btn:'New',
+       detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        // Black,ClipShoes,Drybag,Gray,Helmet,RedHelmet,shortShirt,Sigma,SWorkShoes,Tracker
+    },
+    
+     {
+          id:24,
+          text:'S-Works Recon Shoe-Black',
+          imgURL:ClipShoes,  
+          from:'Hard Metal',
+          price:'499.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+        {
+          id:25,
+          text:'Abus X Canyon Cycling Helmet-Black',
+          imgURL:Helmet,  
+          from:'Rhomb',
+          price:'294.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+         {
+          id:26,
+          text:'Abus X Canyon Cycling Helmet-Red',
+          imgURL:RedHelmet,  
+          from:'Rhomb',
+          price:'294.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+         {
+          id:27,
+          text:'Canyons Men Classic Cycling Jersey ',
+          imgURL:shortShirt,  
+          from:'Guff',
+          price:'69.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+             {
+          id:28,
+          text:'Computer ',
+          imgURL:Tracker,  
+          from:'Hard Metal',
+          price:'279.95',
+          btn:'New',   detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+          {
+          id:29,
+          text:'S-Works Torch Lace-Black ',
+          imgURL:Sigma,  
+          from:'Guff',
+          price:'350.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
+         {
+          id:30,
+          text:'S-Works Recon Shoe-Black ',
+          imgURL:SWorkShoes,  
+          from:'Hard Metal',
+          price:'499.00',
+          btn:'New',
+             detail_information: {
+          brake:'Lorem ipsum dolor sit amet',
+          fork:'Aliquam et libero quis orci ullamcorper pretium',
+          color:'Fusce vehicula dui et',
+          rearTyre:'Maecenas ultrices aliquam sapien sit amet blandit',
+          cassette:'Vestibulum nec neque vestibulum, iaculis libero sit amet, tincidunt nibh',
+          crankset:'Praesent vitae euismod diam',
+        },
+        },
     
     
 ].map((item)=>(
