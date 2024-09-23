@@ -1,4 +1,4 @@
-import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,} from "../assets/images/index";
+import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,Blog1,Blog2,Blog3,Blog4,Blog5,Blog6,Blog7,Blog8,Blog9,Blog10,Blog11} from "../assets/images/index";
 import {Gear, Brake, Outlet, Rider,Renagade, BridgeSport,Crpto,Smash,power_pond,Ready,control,Grid,Brain,Comp,Hd,phenom,Carbon,Team,Black,ClipShoes,Drybag,Gray,Helmet,RedHelmet,shortShirt,Sigma,SWorkShoes,Tracker} from '../assets/images/index';
 
 
@@ -625,3 +625,76 @@ export const Explore2=[
     text:'EVENTS',
   }
 ];
+ export const Blog_Feature=[
+  {
+    id:1,
+    text:"Tips & Trick",
+    imgURL:Blog1,
+    date:"Jun 19 2024",
+    tittle:'Start mountain biking in 6 steps',
+  },
+  {
+    id:2,
+    text:"Routes",
+    imgURL:Blog2,
+    date:"May 16 2024",
+    tittle:'The Charm of riding through Switzerland',
+  },
+  {
+    id:3,
+    text:"Reviews",
+    imgURL:Blog3,
+    date:"May 7 2024",
+    tittle:'Review: Specialized S-Work Tarmak SL8',
+  },
+  {
+    id:4,
+    text:"News",
+    imgURL:Blog4,
+    date:"Apr 18 2024",
+    tittle:'Verbia is about to become the mecca of cycling',
+  },
+  {
+    id:5,
+    text:"Bike 101",
+    imgURL:Blog5,
+    date:"Apr 9 2024",
+    tittle:'City Bike vs Road Bike:',
+  },
+  {
+    id:6,
+    text:"News",
+    imgURL:Blog6,
+    date:"Ma4 22 2024",
+    tittle:'Tour De Frence 2024',
+  },
+  {
+    id:7,
+    text:"Bike 101",
+    imgURL:Blog7,
+    date:"Mar 4 2024",
+    tittle:'Understanding Track cycling events',
+  },
+  {
+    id:8,
+    text:"Bike 101",
+    imgURL:Blog8,
+    date:"Feb 28 2024",
+    tittle:'Gravel bike vs Hardtail bike',
+  },
+  {
+    id:9,
+    text:"Routes",
+    imgURL:Blog9,
+    date:"Feb 20 2024",
+    tittle:'5 Stunning cycling routes in Lugano',
+  },
+  {
+    id:10,
+    text:"Tips and Advices",
+    imgURL:Blog10,
+    date:"Feb 5 2024",
+    tittle:'E-MTB buying Guide',
+  },
+ 
+ ]

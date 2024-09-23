@@ -65,6 +65,17 @@ import shortShirt from './shortShirt.png';
 import Sigma from './Sigma.png';
 import SWorkShoes from './SWorkShoes.png';
 import Tracker from './Tracker.png';
+import Blog1 from './Blog1.png';
+import Blog2 from './Blog2.png';
+import Blog3 from './Blog3.png';
+import Blog4 from './Blog4.png';
+import Blog5 from './Blog5.png';
+import Blog6 from './Blog6.png';
+import Blog7 from './Blog7.png';
+import Blog8 from './Blog8.png';
+import Blog9 from './Blog9.png';
+import Blog10 from './Blog10.png';
+
 
 
 
@@ -142,4 +153,16 @@ export {
     Sigma,
     SWorkShoes,
     Tracker,
+    
+    Blog1,
+    Blog2,
+    Blog3,
+    Blog4,
+    Blog5,
+    Blog6,
+    Blog7,
+    Blog8,
+    Blog9,
+    Blog10,
+    
 }
