@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import Detail from '../SECTIONS/Detail';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 
 export const ArivalCart = ({text, imgURL, before, btn, salebtn=undefined, from, price, handleAddtoCart, id, addToCart,detail_information}) => {
+ const location =useLocation();
+ useEffect(()=>{
+  window.scroll(0,0);
+ },[location]);
+ 
+
   const navigator=useNavigate();
   const handleNavigate=()=>{
     navigator(`/detail/${id}`,{state:{text, imgURL,btn, before, from,addToCart, price, id,detail_information}})

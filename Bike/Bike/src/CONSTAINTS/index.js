@@ -1,4 +1,4 @@
-import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,Blog1,Blog2,Blog3,Blog4,Blog5,Blog6,Blog7,Blog8,Blog9,Blog10,Blog11} from "../assets/images/index";
+import { Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Blog,Event, Service,Blog1,Blog2,Blog3,Blog4,Blog5,Blog6,Blog7,Blog8,Blog9,Blog10} from "../assets/images/index";
 import {Gear, Brake, Outlet, Rider,Renagade, BridgeSport,Crpto,Smash,power_pond,Ready,control,Grid,Brain,Comp,Hd,phenom,Carbon,Team,Black,ClipShoes,Drybag,Gray,Helmet,RedHelmet,shortShirt,Sigma,SWorkShoes,Tracker} from '../assets/images/index';
 
 
@@ -665,7 +665,7 @@ export const Explore2=[
     id:6,
     text:"News",
     imgURL:Blog6,
-    date:"Ma4 22 2024",
+    date:"Mar 22 2024",
     tittle:'Tour De Frence 2024',
   },
   {

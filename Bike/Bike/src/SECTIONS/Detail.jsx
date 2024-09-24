@@ -6,6 +6,8 @@ import {handleAddtoCart} from './Calculation';
 import {handlePrice} from './Calculation';
 import { Arival_Feature } from '../CONSTAINTS';
 
+import { useEffect } from 'react';
+
 
     
 
@@ -13,7 +15,9 @@ import { Arival_Feature } from '../CONSTAINTS';
 export const Detail = () => {
   const location=useLocation();
   const {text, imgURL, before, from, price,addToCart, id,btn,detail_information}=location.state||{};
-  
+  useEffect(()=>{
+    window.scroll(0,0)
+  },[location]);
 
   return (
     <div className="relative">

@@ -12,7 +12,10 @@ import Blog from './SECTIONS/ADDTIONAlS/Blog';
 import Event from './SECTIONS/ADDTIONAlS/Event';
 
 
+
+
 export default function App() {
+
   return (
   <BrowserRouter>
       <Routes>
