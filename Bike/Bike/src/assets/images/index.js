@@ -76,6 +76,8 @@ import Blog8 from './Blog8.png';
 import Blog9 from './Blog9.png';
 import Blog10 from './Blog10.png';
 
+import EentHero from './EentHero.png';
+
 
 
 
@@ -164,5 +166,7 @@ export {
     Blog8,
     Blog9,
     Blog10,
+
+    EentHero,
     
 }

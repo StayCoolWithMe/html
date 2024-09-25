@@ -7,8 +7,8 @@ const BlogCart = ({imgURL,text,date,tittle}) => {
         <img src={imgURL} alt="image" />
 
         <div className="px-1 ">
-            <p className=" font-montserrat text-black mt-5 font-semibold">{text}</p>
-            <p className="text-slate-gray font-montserrat text-sm">{date}</p>
+            
+            <p className="text-slate-gray font-montserrat text-sm mt-5">{date}</p>
             <p className="font-montserrat text-black text-md">{tittle}</p>
 
         </div>
