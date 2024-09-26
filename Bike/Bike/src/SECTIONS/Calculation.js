@@ -2,8 +2,6 @@
 import { json } from "react-router-dom";
 import { Arival_Feature } from "../CONSTAINTS";
 
-
-
     export const cart_array=JSON.parse(localStorage.getItem("cart_array"))|| [];
   
 

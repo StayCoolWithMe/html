@@ -10,6 +10,7 @@ import Gear from './SECTIONS/ADDTIONAlS/Gear';
 import Outlet from './SECTIONS/ADDTIONAlS/Outlet';
 import Blog from './SECTIONS/ADDTIONAlS/Blog';
 import Event from './SECTIONS/ADDTIONAlS/Event';
+import Shop from './SECTIONS/ADDTIONAlS/Shop';
 
 
 
@@ -28,6 +29,7 @@ export default function App() {
         <Route path='/OUTLET' element={<Outlet/>}/>
         <Route path='/BLOG' element={<Blog/>}/>
         <Route path='/EVENTS' element={<Event/>}/>
+        <Route path='/Shop' element={<Shop/>}/>
         
         
 
