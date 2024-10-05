@@ -20,6 +20,7 @@ export default function App() {
   return (
   <BrowserRouter>
       <Routes>
+        {/* npm install react-router-dom */}
         <Route path="/" element={<Master />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path='/Cart' element={<Cart/>}/>

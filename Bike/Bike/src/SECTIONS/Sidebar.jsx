@@ -10,6 +10,7 @@ export const Sidebar = ({isopen,togglesidebar}) => {
       className={`fixed top-0 right-0 w-64 h-full bg-gray-50 `}
         
     >
+      
       <button
         className="absolute top-4 right-4 text-gray-500 text-[20px]"
         onClick={togglesidebar}
